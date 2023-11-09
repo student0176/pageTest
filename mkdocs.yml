@@ -1,12 +1,12 @@
-site_name: My Docs
+site_name: 采风之旅
 theme:
   name: 'material'
 
 nav:
-- Home: index.md
-- User Guide:
-    - Writing your docs: license.md
-    - Styling your docs: license2.md
-- About:
-    - License: about.md
-    - Release Notes: about/release-notes.md
+- ID:虞廷采风人: index.md
+- 笔记文章:
+    - 读后感: license.md
+    - 自创: license2.md
+- 带公式的:
+    - DFT与FFT:分块矩阵的用武之地: about.md
+    - 一道练习题: about/release-notes.md
