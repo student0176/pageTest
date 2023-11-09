@@ -1,0 +1,12 @@
+site_name: My Docs
+theme:
+  name: 'material'
+
+nav:
+- Home: index.md
+- User Guide:
+    - Writing your docs: license.md
+    - Styling your docs: license2.md
+- About:
+    - License: about.md
+    - Release Notes: about/release-notes.md
