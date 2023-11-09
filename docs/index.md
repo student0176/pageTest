@@ -1,11 +1,15 @@
-**在读工科研究生.**
+:smile: **在读工科研究生.** :smile:
 
 **喜欢四书五经、数学物理、计算机、台球和龙舟.**(~~*没错就是不喜欢自己的专业*~~)
 
-**mail : `shisu@0176@email.com`**
+**`mail : shisu0176@gmail.com`**
 
-**Bilibili :  <https://space.bilibili.com/408767554>**
+**bilibili : <https://space.bilibili.com/408767554>**
  
+
+:smile: :smile:   :smile:
+
+
 .
 
 

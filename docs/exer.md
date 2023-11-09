@@ -1,0 +1,28 @@
+
+**Q:** $S(x)=\sum_{k=0}^{∞} { k+m+1 \choose m+1 }\frac{x^k }{k!}$
+
+**A:**
+
+$S(x)=\sum_{k=0}^{∞} { k+m+1 \choose k }\frac{x^k }{k!} =\sum_{k=0}^{∞} { k+m \choose k-1 }\frac{x^k }{k!} +\sum_{k=0}^{∞} { k+m \choose k }\frac{x^k }{k!}$
+
+$\begin{eqnarray*}
+\implies S'(x)&=&\sum_{k=1}^{∞} { k+m \choose k-1 }\frac{x^{k-1 }}{(k-1)!} +\sum_{k=1}^{∞} { k+m \choose k }\frac{x^{k-1 }}{(k-1)!} \\&=&\sum_{k=0}^{∞} { k+m+1 \choose k }\frac{x^{k }}{k!} +\sum_{k=0}^{∞} { k+m+1 \choose k+1 }\frac{x^{k }}{k!}
+\\&=&S(x)+\sum_{k=0}^{∞} { k+m+1 \choose k+1 }\frac{x^{k }}{k!}
+\end{eqnarray*}$
+
+$\implies S'(x)-S(x)=\sum_{k=0}^{∞} { k+m+1 \choose k+1 }\frac{x^{k }}{k!}$
+
+.
+
+
+${ k+m+1 \choose k+1 }=\frac{(k+m+1)!}{m!(k+1)!} =\frac{(k+m+1)!}{k!(m+1)!}\frac{m+1}{k+1} =\frac{m+1}{k+1} { k+m+1 \choose m+1 }$
+
+$\begin{eqnarray*}
+\implies  x(S'(x)-S(x))&=&\sum_{k=0}^{∞}\frac{m+1}{k+1} { k+m+1 \choose m+1 }\frac{x^{k+1 }}{k!}
+\\&=&(m+1)\sum_{k=0}^{∞}{ k+m+1 \choose m+1 }\frac{x^{k+1 }}{(k+1)!}
+\end{eqnarray*}$
+
+$\implies  [x(S'(x)-S(x))]'=(m+1)\sum_{k=0}^{∞}{ k+m+1 \choose m+1 }\frac{x^{k }}{k!}=(m+1)S(x)$
+
+$\implies x(S''-S')+S'-(m+2)S=0;S(0)=1,S'(0)=m+1$
+

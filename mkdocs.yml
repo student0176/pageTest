@@ -1,12 +1,68 @@
 site_name: 采风之旅
 theme:
   name: 'material'
+#  language: zh-Hant
+
+  font:
+    text: Roboto Mono
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+      accent: red
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+      accent: cyan
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+#    - header.autohide
+#    - announce.dismiss
+
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+  - javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+
+
+
+
+
 
 nav:
-- ID:虞廷采风人: index.md
-- 笔记文章:
-    - 读后感: license.md
-    - 自创: license2.md
-- 带公式的:
-    - DFT与FFT:分块矩阵的用武之地: about.md
-    - 一道练习题: about/release-notes.md
+  - ID:虞廷采风人: index.md
+
+  - 笔记文章:
+      - 读后感: license.md
+      - 自创: license2.md
+  - 带公式的:
+      - DFT与FFT:分块矩阵的用武之地: about.md
+      - 一道练习题: exer

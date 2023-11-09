@@ -18,6 +18,7 @@
 <center>我之志 舞雩间 </center>
 
 * **其二**
+
 <center>一苇南下适楚兮，吾闻屈子秭归人</center>
 
 <center>虎狼秦破郢都兮，时仲夏之初五</center>
@@ -45,6 +46,7 @@
 <center>吾哥回呦，嘿呦，嘿呦！</center></center>
 
 * **其三**
+
 <center>屈平迷弟何处寻？守陵人徐姓曰正端</center>
 
 <center>三十载如一日兮，何曾见吾苦叹？</center>
