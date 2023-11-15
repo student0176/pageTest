@@ -8,8 +8,10 @@
       
       
       
+        <link rel="canonical" href="https://github.com/student0176/pageTest/about/">
       
-        <link rel="prev" href="../license2/">
+      
+        <link rel="prev" href="../mypoem/">
       
       
       
@@ -18,7 +20,7 @@
     
     
       
-        <title>DFT与FFT:分块矩阵的用武之地 - 采风之旅</title>
+        <title>DFT与FFT：分块矩阵的用武之地 - 采风之旅</title>
       
     
     
@@ -39,8 +41,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -63,7 +65,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="light-blue">
   
     
     
@@ -94,7 +96,7 @@
     <a href=".." title="采风之旅" class="md-header__button md-logo" aria-label="采风之旅" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M96 128V70.2c0-13.3 8.3-25.3 20.8-30l96-36c7.2-2.7 15.2-2.7 22.5 0l96 36c12.5 4.7 20.8 16.6 20.8 30V128h-.3c.2 2.6.3 5.3.3 8v40c0 70.7-57.3 128-128 128s-128-57.3-128-128v-40c0-2.7.1-5.4.3-8H96zm48 48c0 44.2 35.8 80 80 80s80-35.8 80-80v-16H144v16zm-32.1 151.7c10.5-3.4 21.8.4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5 65 20.9 112 81.7 112 153.6 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6zM208 48v16h-16c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h16v16c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8V96h16c4.4 0 8-3.6 8-8V72c0-4.4-3.6-8-8-8h-16V48c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DFT与FFT:分块矩阵的用武之地
+              <b>DFT与FFT：分块矩阵的用武之地</b>
             
           </span>
         </div>
@@ -124,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
       </label>
     
@@ -134,9 +136,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
       </label>
     
@@ -168,6 +170,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -207,12 +211,14 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="采风之旅" class="md-nav__button md-logo" aria-label="采风之旅" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M96 128V70.2c0-13.3 8.3-25.3 20.8-30l96-36c7.2-2.7 15.2-2.7 22.5 0l96 36c12.5 4.7 20.8 16.6 20.8 30V128h-.3c.2 2.6.3 5.3.3 8v40c0 70.7-57.3 128-128 128s-128-57.3-128-128v-40c0-2.7.1-5.4.3-8H96zm48 48c0 44.2 35.8 80 80 80s80-35.8 80-80v-16H144v16zm-32.1 151.7c10.5-3.4 21.8.4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5 65 20.9 112 81.7 112 153.6 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6zM208 48v16h-16c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h16v16c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8V96h16c4.4 0 8-3.6 8-8V72c0-4.4-3.6-8-8-8h-16V48c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8z"/></svg>
 
     </a>
     采风之旅
@@ -230,7 +236,7 @@
         
   
   <span class="md-ellipsis">
-    ID:虞廷采风人
+    :)
   </span>
   
 
@@ -249,7 +255,10 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -259,7 +268,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -283,11 +292,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../license/" class="md-nav__link">
+      <a href="../3hundred/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    读后感
+    <b>读三百</b>
   </span>
   
 
@@ -303,11 +312,31 @@
   
   
     <li class="md-nav__item">
-      <a href="../license2/" class="md-nav__link">
+      <a href="../seven/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    自创
+    <b>读七篇</b>
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mypoem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    <b>自创</b>
   </span>
   
 
@@ -336,7 +365,10 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
@@ -344,7 +376,7 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -379,7 +411,7 @@
           
   
   <span class="md-ellipsis">
-    DFT与FFT:分块矩阵的用武之地
+    <b>DFT与FFT：分块矩阵的用武之地</b>
   </span>
   
 
@@ -390,7 +422,7 @@
         
   
   <span class="md-ellipsis">
-    DFT与FFT:分块矩阵的用武之地
+    <b>DFT与FFT：分块矩阵的用武之地</b>
   </span>
   
 
@@ -411,13 +443,6 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    写在前面
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
     准备工作
   </a>
   
@@ -456,7 +481,7 @@
         
   
   <span class="md-ellipsis">
-    一道练习题
+    <b>一道练习题</b>
   </span>
   
 
@@ -480,58 +505,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    写在前面
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    准备工作
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dft" class="md-nav__link">
-    DFT
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fft" class="md-nav__link">
-    FFT
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -540,17 +513,22 @@
                   
 
 
-  <h1>DFT与FFT:分块矩阵的用武之地</h1>
+  <h1><b>DFT与FFT：分块矩阵的用武之地</b></h1>
 
-<p>DFT叫做离散版本的Fourier变换，在信号处理方面发挥着重要作用。初次接触只感觉到时域频域绕来绕去，公式异常繁复。如果背会公式的话，倒是可以慢慢玩味它背后的思想。本文就是我综合了很多人的真知灼见（当然也踩了一些坑）后，玩味的结果，目的是对一个想尝试理解这些内容的读者，帮他们缩短一些找资料的时间，也希望能够在不扯太多新名词的前提下把话说清楚。</p>
-<h3 id="_1">写在前面</h3>
+<p><font size=5>————新手友好型的有关信号频率分析的讨论</font></p>
+<p><font size=3.5><strong>JUNE 3, 2023</strong> | UPDATED NOV 9, 2023</font></p>
+<p><br><br>
+DFT叫做离散版本的Fourier变换，在信号处理方面发挥着重要作用。初次接触只感觉到时域频域绕来绕去，公式异常繁复。如果背会公式的话，倒是可以慢慢玩味它背后的思想。本文就是我综合了很多人的真知灼见（<del>当然也踩了一些坑</del>）后，玩味的结果，目的是对一个想尝试理解这些内容的读者，帮他们缩短一些找资料的时间，也希望能够在不扯太多新名词的前提下把话说清楚。</p>
+<div class="admonition warning">
+<p class="admonition-title"><font size=3><strong>写在前面</strong></size></p>
 <ul>
 <li>DFT就是找出序列在一组特定基底下的系数，这组基底当然是经过了巧妙地设计的，它的每一列都表示一个固定角频率的绕单位圆运动的采样点，不同的列对应不同倍频。求出系数后，原来的序列当然也就表达成了好几列的线性组合，输入的采样序列就分解为不同频率的采样序列的叠加；</li>
-<li>数学工具主要用到分块矩阵、复数的基本性质、简单的求极限、等比数列求和等；</li>
+<li>用到的<font color=DarkOrange >数学工具</font>包括分块矩阵、复数的基本性质、简单的求极限、等比数列求和等；</li>
 <li>任何问题都有多种看待方式，也必须从各个角度去尝试理解，因为这样会感到快乐，从而形成良好的正反馈，本文就是在这种快乐状态中产生的；</li>
 <li>懒惰的人不会这样做，浮躁的人认为没必要这样做，所以他们的快乐较少，快乐少又会加深懒惰与浮躁，形成恶性的正反馈，希望吾侪引以为戒，苟日新日日新又日新。</li>
 </ul>
-<h3 id="_2">准备工作</h3>
+</div>
+<h3 id="_1"><font color=DodgerBlue  >准备工作</font></h3>
 <ul>
 <li>从一个<strong>线性代数</strong>问题出发：求解向量<span class="arithmatex">\(\beta\)</span>在DFT基底下的系数<span class="arithmatex">\(X\)</span></li>
 </ul>
@@ -564,15 +542,11 @@
 <div class="arithmatex">\[\left( {\begin{array}{*{20}{c}} {{x_0}}\\ {{x_1}}\\ {{x_2}}\\ {{x_3}} \end{array}} \right){\rm{ = inv}}\left( {\begin{array}{*{20}{c}} 1&amp;1&amp;1&amp;1\\ 1&amp;\omega &amp;{{\omega ^2}}&amp;{{\omega ^3}}\\ 1&amp;{{\omega ^2}}&amp;{{\omega ^4}}&amp;{{\omega ^6}}\\ 1&amp;{{\omega ^3}}&amp;{{\omega ^6}}&amp;{{\omega ^9}} \end{array}} \right)\beta  = \frac{1}{4}\left( {\begin{array}{*{20}{c}} {{\alpha _0}^H}\\ {{\alpha _1}^H}\\ {{\alpha _2}^H}\\ {{\alpha _3}^H} \end{array}} \right)\beta  = \frac{1}{4}\left( {\begin{array}{*{20}{c}} {{\alpha _0}^H\beta }\\ {{\alpha _1}^H\beta }\\ {{\alpha _2}^H\beta }\\ {{\alpha _3}^H\beta } \end{array}} \right)\]</div>
 <p>其中<span class="arithmatex">\({\alpha ^H} = {{\bar \alpha }^T} = \overline {{\alpha ^T}}\)</span>，将<span class="arithmatex">\(X\)</span>代回得到恒等式</p>
 <div class="arithmatex">\[\beta  =  \frac{1}{{\rm{4}}}({\alpha _0}^H\beta ){\alpha _0} +\frac{1}{{\rm{4}}}({\alpha _1}^H\beta ){\alpha _1} + \frac{1}{{\rm{4}}}({\alpha _2}^H\beta ){\alpha _2} + \frac{1}{{\rm{4}}}({\alpha _3}^H\beta ){\alpha _3} = \sum\limits_{i = 0}^3 {\frac{{{\alpha _i}^H\beta }}{{{\alpha _i}^H{\alpha _i}}}} {\alpha _i}\]</div>
-<ul>
-<li>
-<p><strong>我为何选择4阶的矩阵</strong></p>
-<p>首先如果为了省事，应该从低阶到高阶，所以应该从2阶阵出发，BUT很遗憾，<span class="arithmatex">\({F_2} = \left( {\begin{array}{*{20}{c}} 1&amp;1\\ 1&amp;{ - 1} \end{array}} \right)\)</span>
- ，没有出现复单位根，不具备很强的说服力，所以选4阶。那为何不再看看8阶呢？这么说吧，且不论8阶矩阵的复数乘法，只是试着在64个格子内都填入特定的数字，没有人会觉得不枯燥，如果你真的这么尝试了，那么在看到后面的FFT算法后自然会更有感触。另外一个原因是，4阶的明白了后，自然可以充满自信地说 
-<span class="arithmatex">\(4 \to N\)</span>时显然成立！（这真的很显然）；所以从4阶阵入手，不仅方便举例，还不失一般性，还方便我写入，简直一石三鸟啊有木有！</p>
-</li>
-</ul>
-<h3 id="dft">DFT</h3>
+<div class="admonition note">
+<p class="admonition-title"><font size=3><strong>我为何选择4阶的矩阵</strong></size></p>
+<p>首先如果为了省事，应该从低阶到高阶，所以应该从2阶阵出发，BUT很遗憾，<span class="arithmatex">\({F_2} = \left( {\begin{array}{*{20}{c}} 1&amp;1\\ 1&amp;{ - 1} \end{array}} \right)\)</span> ，没有出现复单位根，不具备很强的说服力，所以选4阶。<br>那为何不再看看8阶呢？这么说吧，且不论8阶矩阵的复数乘法，只是试着在64个格子内都填入特定的数字，没有人会觉得不枯燥，如果你真的这么尝试了，那么在看到后面的FFT算法后自然会更有感触。<br>另外一个原因是，4阶的明白了后，自然可以充满自信地说<span class="arithmatex">\(4 \to N\)</span>时显然成立！（<font color=CornflowerBlue  >这真的很显然</font>）；所以从4阶阵入手，不仅方便举例，还不失一般性，还方便我写入，简直一石三鸟啊有木有！</p>
+</div>
+<h3 id="dft"><font color=DodgerBlue >DFT</font></h3>
 <p>为何教科书上求DFT时候，在<span class="arithmatex">\(X[k] = \sum\limits_{n = 0}^{N - 1} {{x_n}{W_N}^{nk}}\)</span>中将<span class="arithmatex">\({W_N}^{nk} = {e^{ - \frac{{2\pi i}}{N}nk}}\)</span>定义为负幂次？我们当然可以说因为类比连续时候的<span class="arithmatex">\(\int\limits_{ - l}^l {x(t){e^{ - i\frac{{n\pi t}}{l}}}} {\rm{d}}t\)</span>就是负的幂次，但换一种角度，因为我们最开始是想用那些正幂次来充当基底的向量，所以与
 <span class="arithmatex">\(\beta\)</span>做内积来求系数的任务自然就落到它们的共轭转置的头上了。</p>
 <p>至于那个不知所措的<span class="arithmatex">\(\frac{1}{4}\)</span>,其实放在DFT还是IDFT中都不要紧，为什么？因为对一个已知序列<span class="arithmatex">\(f\)</span>，必然有</p>
@@ -590,15 +564,20 @@
 <p>这就是离散形式的Fourier变换了，事情还没有完！我们将目光着眼于关于<span class="arithmatex">\(N\)</span>（偶数）的DFT 的矩阵(单位根<span class="arithmatex">\(\omega=e^{i\frac{2\pi}{N}}\)</span>）</p>
 <p>先算两个性质：首先<span class="arithmatex">\(F_i = \alpha _i^Hf = \alpha _i^H\overline f  = \alpha _{N - i}^T\overline f  = \overline {F_{N-i}}\)</span>，取<span class="arithmatex">\(i=\frac{N}{2}\)</span> ，有<span class="arithmatex">\({F_{\frac{N}{2}}} = \overline {{F_{\frac{N}{2}}}}\)</span></p>
 <p>其次注意到<span class="arithmatex">\(a_i\)</span>与<span class="arithmatex">\(F\)</span>都是复的列向量，都有这种<strong>共轭对称性</strong>，加上<span class="arithmatex">\(\alpha_i^TF=Nf_i\)</span>
- 是实的，这就仿佛是在告诉我们说：嗨！小伙子，只要你把我写成求和形式后化简，就能得到你想要的。何乐而不为呢？设 <span class="arithmatex">\(F_j=m_je^{i\theta_j}\)</span>
- ,则 </p>
+ 是实的，这就仿佛是在告诉我们说：</p>
+<div class="admonition quote">
+<p class="admonition-title"><font size=3></size></p>
+<p>嗨！小伙子，只要你把我写成求和形式后化简，就能得到你想要的！</p>
+</div>
+<p>何乐而不为呢？设 <span class="arithmatex">\(F_j=m_je^{i\theta_j}\)</span> ,则 </p>
 <div class="arithmatex">\[{f_k} = \frac{1}{N}{\alpha _k}^TF = \frac{1}{N}\left( {\begin{array}{*{20}{c}} 1&amp;{{e^{i\frac{{2\pi }}{N}k}}}&amp; \ldots &amp;{{e^{i\frac{{2\pi }}{N}\frac{N}{2}k}}}&amp;{{e^{ - i\frac{{2\pi }}{N}(\frac{N}{2} - 1)k}}}&amp; \ldots &amp;{{e^{ - i\frac{{2\pi }}{N}k}}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{F_0}}\\ {{F_1}}\\  \vdots \\ {{F_{\frac{N}{2}}}}\\ {\overline {{F_{\frac{N}{2} - 1}}} }\\  \vdots \\ {\overline {{F_1}} } \end{array}} \right){\rm{ = }}\frac{1}{N}(\sum\limits_{j = 1}^{\frac{N}{2} - 1} {2{\mathop{\rm Re}\nolimits} ({e^{i\frac{{2\pi }}{N}kj}}} {F_j}) + {F_0} - {F_{\frac{N}{2}}}) = \frac{1}{N}(\sum\limits_{j = 1}^{\frac{N}{2} - 1} {2{m_j}\cos( \frac{{2\pi }}{N}kj + {\theta _j}} ) + {F_0} - {F_{\frac{N}{2}}})\]</div>
 <p>所以信号<span class="arithmatex">\(f\)</span>就是对一组频率为<span class="arithmatex">\(\frac{1}{N}\)</span>之倍数的信号采样后所得，假设被采样的信号是<span class="arithmatex">\({\sin (2\pi \eta t + \phi )}\)</span>，每隔 <span class="arithmatex">\(T_s\)</span> 采样一次，采出 <span class="arithmatex">\(N\)</span> 个点，就有 <span class="arithmatex">\(f_n={\sin (2\pi \eta (n{T_s}) + \phi )}\)</span>
 ，此时对应的频率为 <span class="arithmatex">\(\eta T_s\)</span> 。由于是同一个信号，取上上个式子 <span class="arithmatex">\(n=L\)</span> ，有 <span class="arithmatex">\(\eta T_s=\frac{j}{N}\)</span> ，即<span class="arithmatex">\(\eta L=j\)</span> ，这样就建立了 <strong>连续信号的频率</strong> &amp; <strong>时间长度</strong>与 <strong><span class="arithmatex">\(N\)</span>之index</strong>的对应关系。</p>
-<h3 id="fft">FFT</h3>
+<h3 id="fft"><font color=DodgerBlue >FFT</font></h3>
+<blockquote>
 <p><em>我偏不用蝶形图，你奈我何？</em></p>
-<p>还是从<strong>4阶矩阵</strong>出发（因为三维生物只能仰望四维）</p>
-<p>我们拿到一个序列<span class="arithmatex">\(f\)</span> 后，现在<strong>自信地</strong>对其套用DFT公式</p>
+</blockquote>
+<p>仍然从<strong>4阶矩阵</strong>出发，在我们拿到一个序列<span class="arithmatex">\(f\)</span> 后，现在<strong>自信地</strong>对其套用DFT公式</p>
 <div class="arithmatex">\[F = \overline {\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right)} f = \overline {\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right)} \left( {\begin{array}{*{20}{c}} {{f_0}}\\ {{f_1}}\\ {{f_2}}\\ {{f_3}} \end{array}} \right)\]</div>
 <p>要是手算，需要16次复数的乘法，<span class="arithmatex">\(N\)</span>阶序列需要<span class="arithmatex">\(N^2\)</span>次复数乘法。FFT的提出者<strong>Cooley&amp;Tukey</strong>说：我们为何不少算几次呢？因为这个矩阵<strong>显然</strong>可以进行如下的分解啊：</p>
 <div class="arithmatex">\[\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right) = \left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right){I_4} = \left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right){\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;0&amp;0&amp;0\\ 0&amp;0&amp;1&amp;0\\ 0&amp;1&amp;0&amp;0\\ 0&amp;0&amp;0&amp;1 \end{array}} \right)^2}\]</div>
@@ -610,12 +589,15 @@
 我们（事后诸葛亮）认为算1次复数乘法，有<span class="arithmatex">\(2\)</span>个；左边的对角 <span class="arithmatex">\(D\)</span>矩阵需要<span class="arithmatex">\(2\)</span> 次，共计 <span class="arithmatex">\(O(F_4)=4=\frac{4}{2}\log4\)</span>
  次。都说到这儿了，不妨再看看<span class="arithmatex">\(F_8\)</span>吧</p>
 <div class="arithmatex">\[{F_{\rm{8}}} = \left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{5}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{7}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{8}}}}&amp;{{\omega ^{{\rm{10}}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{14}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{15}}}}}&amp;{{\omega ^{{\rm{18}}}}}&amp;{{\omega ^{{\rm{21}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{8}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{16}}}}}&amp;{{\omega ^{{\rm{20}}}}}&amp;{{\omega ^{{\rm{24}}}}}&amp;{{\omega ^{{\rm{28}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{5}}}}&amp;{{\omega ^{{\rm{10}}}}}&amp;{{\omega ^{{\rm{15}}}}}&amp;{{\omega ^{{\rm{20}}}}}&amp;{{\omega ^{{\rm{25}}}}}&amp;{{\omega ^{{\rm{30}}}}}&amp;{{\omega ^{{\rm{35}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{18}}}}}&amp;{{\omega ^{{\rm{24}}}}}&amp;{{\omega ^{{\rm{30}}}}}&amp;{{\omega ^{{\rm{36}}}}}&amp;{{\omega ^{{\rm{42}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{7}}}}&amp;{{\omega ^{{\rm{14}}}}}&amp;{{\omega ^{{\rm{21}}}}}&amp;{{\omega ^{{\rm{28}}}}}&amp;{{\omega ^{{\rm{35}}}}}&amp;{{\omega ^{{\rm{42}}}}}&amp;{{\omega ^{{\rm{49}}}}} \end{array}} \right){\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{1}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}} \end{array}} \right)^{\rm{2}}}{\rm{ = }}{F_8}{P_8}^2\]</div>
-<p>similiarly as before，we have</p>
+<p><font size=4><em>similiarly as before，we have</em></font></p>
 <div class="arithmatex">\[{F_8}{P_8} = \left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}&amp;\omega &amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{5}}}}&amp;{{\omega ^{\rm{7}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{8}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{{\rm{10}}}}}&amp;{{\omega ^{{\rm{14}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{18}}}}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{9}}}}&amp;{{\omega ^{{\rm{15}}}}}&amp;{{\omega ^{{\rm{21}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{8}}}}&amp;{{\omega ^{{\rm{16}}}}}&amp;{{\omega ^{{\rm{24}}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{20}}}}}&amp;{{\omega ^{{\rm{28}}}}}\\ {\rm{1}}&amp;{{\omega ^{{\rm{10}}}}}&amp;{{\omega ^{{\rm{20}}}}}&amp;{{\omega ^{{\rm{30}}}}}&amp;{{\omega ^{\rm{5}}}}&amp;{{\omega ^{{\rm{15}}}}}&amp;{{\omega ^{{\rm{25}}}}}&amp;{{\omega ^{{\rm{35}}}}}\\ {\rm{1}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{24}}}}}&amp;{{\omega ^{{\rm{36}}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{{\rm{18}}}}}&amp;{{\omega ^{{\rm{30}}}}}&amp;{{\omega ^{{\rm{42}}}}}\\ {\rm{1}}&amp;{{\omega ^{{\rm{14}}}}}&amp;{{\omega ^{{\rm{28}}}}}&amp;{{\omega ^{{\rm{42}}}}}&amp;{{\omega ^{\rm{7}}}}&amp;{{\omega ^{{\rm{21}}}}}&amp;{{\omega ^{{\rm{35}}}}}&amp;{{\omega ^{{\rm{49}}}}} \end{array}} \right){\rm{ = }}\left( {\begin{array}{*{20}{c}} {{I_4}}&amp;{{D_4}}\\ {{I_4}}&amp;{{\rm{ - }}{D_4}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{F_4}}&amp;0\\ 0&amp;{{F_4}} \end{array}} \right)\]</div>
-<p><strong>注：</strong>如果你对上一步迷惑，这是正常的，不迷惑才不正常！因为根据单位根的性质，现在 
-<span class="arithmatex">\(F_8\)</span>中<span class="arithmatex">\(\omega^2\)</span>才是<span class="arithmatex">\(F_4\)</span>中的<span class="arithmatex">\(\omega\)</span> ，所以两个矩阵中的<span class="arithmatex">\(\omega\)</span>并不是同一个数！(为何不用两个数以作区分呢？因为打字很费时间，将就着看吧...(我的我的))</p>
-<p><strong>再注：</strong>矩阵<span class="arithmatex">\(D_4=diag(1,\omega,\omega^2,\omega^3)\)</span>是从<span class="arithmatex">\(D_8\)</span>中来的，所以其中的 <span class="arithmatex">\(\omega\)</span> 是8次单位根。同理，<span class="arithmatex">\(D_{2^{m-1}}\)</span> 中的
- <span class="arithmatex">\(\omega\)</span>是 <span class="arithmatex">\(2^m\)</span> 次单位根,懂？</p>
+<div class="admonition note">
+<p class="admonition-title"><font size=3><strong>注：</strong></size></p>
+<ul>
+<li>如果你对上一步迷惑，这是正常的，不迷惑才不正常！因为根据单位根的性质，现在<span class="arithmatex">\(F_8\)</span>中<span class="arithmatex">\(\omega^2\)</span>才是<span class="arithmatex">\(F_4\)</span>中的<span class="arithmatex">\(\omega\)</span> ，所以两个矩阵中的<span class="arithmatex">\(\omega\)</span>并不是同一个数！(为何不用两个数以作区分呢？因为打字很费时间，将就着看吧...(我的我的))<br></li>
+<li>矩阵<span class="arithmatex">\(D_4=diag(1,\omega,\omega^2,\omega^3)\)</span>是从<span class="arithmatex">\(D_8\)</span>中来的，所以其中的 <span class="arithmatex">\(\omega\)</span> 是8次单位根。同理，<span class="arithmatex">\(D_{2^{m-1}}\)</span> 中的<span class="arithmatex">\(\omega\)</span>是 <span class="arithmatex">\(2^m\)</span> 次单位根,懂？</li>
+</ul>
+</div>
 <p><em>cont'd——</em></p>
 <div class="arithmatex">\[{F_8}{P_8}^2 = \left( {\begin{array}{*{20}{c}} {{I_4}}&amp;{{D_4}}\\ {{I_4}}&amp;{{\rm{ - }}{D_4}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{F_4}}&amp;0\\ 0&amp;{{F_4}} \end{array}} \right){P_8} = \left( {\begin{array}{*{20}{c}} {{I_4}}&amp;{{D_4}}\\ {{I_4}}&amp;{{\rm{ - }}{D_4}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {\left( {\begin{array}{*{20}{c}} {{I_2}}&amp;{{D_2}}\\ {{I_2}}&amp;{{\rm{ - }}{D_2}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{F_2}}&amp;0\\ 0&amp;{{F_2}} \end{array}} \right){P_4}}&amp;0\\ 0&amp;{\left( {\begin{array}{*{20}{c}} {{I_2}}&amp;{{D_2}}\\ {{I_2}}&amp;{{\rm{ - }}{D_2}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{F_2}}&amp;0\\ 0&amp;{{F_2}} \end{array}} \right){P_4}} \end{array}} \right){P_8}\]</div>
 <p>从右往左看，排列矩阵不用管，中间是两个<span class="arithmatex">\(F_4\)</span>的计算量，最左边考虑一次对角阵<span class="arithmatex">\(D_4\)</span> ..它总共需要的复数乘法次数 <span class="arithmatex">\(O(F_8)=2×O(F_4)+4=12=\frac{8}{2}\log8\)</span></p>
@@ -624,24 +606,35 @@
 <thead>
 <tr>
 <th></th>
-<th><code>DFT</code></th>
-<th><code>FFT</code></th>
+<th style="text-align: center;"><font size=4><code>DFT</code></font></th>
+<th style="text-align: center;"><font size=4><code>FFT</code></font></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>Order</code></td>
-<td><span class="arithmatex">\(N^2\)</span></td>
-<td><span class="arithmatex">\(\frac{N}{2}\log{N}\)</span></td>
+<td><strong><font size=4><code>Order</code></font></strong></td>
+<td style="text-align: center;"><font size=3><span class="arithmatex">\(N^2\)</span></font></td>
+<td style="text-align: center;"><font size=3><span class="arithmatex">\(\frac{N}{2}\log{N}\)</span></font></td>
 </tr>
 </tbody>
 </table>
+<style>
+  table {
+    border-collapse: collapse;
+    margin: auto;
+  }
+  th, td {
+    border: 2px solid black;
+    text-align: center;
+  }
+</style>
+
 <p>由<span class="arithmatex">\(\mathop {\lim }\limits_{x \to \infty } \frac{{\log x}}{{{x^\varepsilon }}} = \mathop {\lim }\limits_{x \to \infty } \frac{1}{{{x^{1 + \varepsilon }}\ln 2}} = 0\)</span>
  ，可知FFT的运算量要小于<span class="arithmatex">\(\frac{N^{1+\epsilon}}{2}\)</span>,而<span class="arithmatex">\(\epsilon\)</span>是趋于<span class="arithmatex">\(0\)</span>的，所以相当于从二次增长变成线性增长。</p>
-<p>..</p>
-<p>..</p>
-<p>..</p>
-<p>--<strong>end</strong></p>
+<p><br><br><br><br></p>
+<blockquote>
+<p>----<font size=5 ><strong>cont'd</strong></font></p>
+</blockquote>
 
 
 
@@ -652,6 +645,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
@@ -664,6 +659,30 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../mypoem/" class="md-footer__link md-footer__link--prev" aria-label="Previous: &lt;b&gt;自创&lt;/b&gt;">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                <b>自创</b>
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -672,6 +691,32 @@
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://space.bilibili.com/408767554" target="_blank" rel="noopener" title="space.bilibili.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0s16.1 2.868 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0c8.8 0 16.1 2.868 21.9 8.603 5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1zm-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8 6.3-6.5 9.7-14.3 10.1-23.5V173.8zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5-9.6 0-17.5-3.2-23.6-9.5-6.1-6.3-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2 6.3-6.3 13.2-9.6 23.3-10 9.2.4 17 3.7 23.3 10zm191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.1 6.3-14 9.5-23.6 9.5-9.6 0-17.4-3.2-23.6-9.5-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2 6.3-6.3 14.1-9.6 23.3-10 9.2.4 17 3.7 23.3 10z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/student0176" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
     </a>
   
 </div>
@@ -686,7 +731,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.expand", "navigation.path", "navigation.top"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.instant", "navigation.instant.prefetch", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.81fa17fe.min.js"></script>
