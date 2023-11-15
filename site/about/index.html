@@ -24,6 +24,9 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.4b4a2bd9.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
       
 
 
@@ -36,10 +39,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -51,7 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red">
   
     
     
@@ -63,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-my-webpage" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -105,6 +117,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
     
@@ -216,7 +254,9 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -334,8 +374,17 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DFT与FFT:分块矩阵的用武之地
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -346,6 +395,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    写在前面
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    准备工作
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dft" class="md-nav__link">
+    DFT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fft" class="md-nav__link">
+    FFT
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -358,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="release-notes.md" class="md-nav__link">
+      <a href="../exer" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -396,8 +490,42 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    写在前面
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    准备工作
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dft" class="md-nav__link">
+    DFT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fft" class="md-nav__link">
+    FFT
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -412,9 +540,108 @@
                   
 
 
-<h1 id="welcome-to-my-webpage">Welcome to my webpage!</h1>
-<p>about</p>
-<p>$a^2$</p>
+  <h1>DFT与FFT:分块矩阵的用武之地</h1>
+
+<p>DFT叫做离散版本的Fourier变换，在信号处理方面发挥着重要作用。初次接触只感觉到时域频域绕来绕去，公式异常繁复。如果背会公式的话，倒是可以慢慢玩味它背后的思想。本文就是我综合了很多人的真知灼见（当然也踩了一些坑）后，玩味的结果，目的是对一个想尝试理解这些内容的读者，帮他们缩短一些找资料的时间，也希望能够在不扯太多新名词的前提下把话说清楚。</p>
+<h3 id="_1">写在前面</h3>
+<ul>
+<li>DFT就是找出序列在一组特定基底下的系数，这组基底当然是经过了巧妙地设计的，它的每一列都表示一个固定角频率的绕单位圆运动的采样点，不同的列对应不同倍频。求出系数后，原来的序列当然也就表达成了好几列的线性组合，输入的采样序列就分解为不同频率的采样序列的叠加；</li>
+<li>数学工具主要用到分块矩阵、复数的基本性质、简单的求极限、等比数列求和等；</li>
+<li>任何问题都有多种看待方式，也必须从各个角度去尝试理解，因为这样会感到快乐，从而形成良好的正反馈，本文就是在这种快乐状态中产生的；</li>
+<li>懒惰的人不会这样做，浮躁的人认为没必要这样做，所以他们的快乐较少，快乐少又会加深懒惰与浮躁，形成恶性的正反馈，希望吾侪引以为戒，苟日新日日新又日新。</li>
+</ul>
+<h3 id="_2">准备工作</h3>
+<ul>
+<li>从一个<strong>线性代数</strong>问题出发：求解向量<span class="arithmatex">\(\beta\)</span>在DFT基底下的系数<span class="arithmatex">\(X\)</span></li>
+</ul>
+<div class="arithmatex">\[\beta  = \left( {\begin{array}{*{20}{c}} {{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 0 \times 0}}}}}&amp;{{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 0 \times 1}}}}}&amp;{{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 0 \times 2}}}}}&amp;{{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 0 \times 3}}}}}\\ {{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 1 \times 0}}}}}&amp;{{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 1 \times 1}}}}}&amp;{{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 1 \times 2}}}}}&amp;{{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 1 \times 3}}}}}\\ {{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 2 \times 0}}}}}&amp;{{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 2 \times 1}}}}}&amp;{{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 2 \times 2}}}}}&amp;{{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 2 \times 3}}}}}\\ {{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 3 \times 0}}}}}&amp;{{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 3 \times 1}}}}}&amp;{{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 3 \times 2}}}}}&amp;{{e^{\frac{{2\pi i}}{{\rm{4}}}{\rm{ \times 3 \times 3}}}}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{x_0}}\\ {{x_1}}\\ {{x_2}}\\ {{x_3}} \end{array}} \right){\rm{ = }}\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{x_0}}\\ {{x_1}}\\ {{x_2}}\\ {{x_3}} \end{array}} \right)  {\rm{ = }}\left( {\begin{array}{*{20}{c}} {{\alpha _0}}&amp;{{\alpha _1}}&amp;{{\alpha _2}}&amp;{{\alpha _3}} \end{array}} \right)X\]</div>
+<p>若<span class="arithmatex">\(n\)</span>次单位根<span class="arithmatex">\(e^{\frac{2\pi i}{n}}=\omega\)</span>，由等比数列求和有</p>
+<div class="arithmatex">\[\sum\limits_{j = 0}^{n - 1} {{\omega ^{lj}}} {\omega ^{kj}} = \frac{{1 - {\omega ^{(l + k)n}}}}{{1 - {\omega ^{l + k}}}} = \left\{ {\begin{array}{*{20}{c}} n&amp;{(l + k)\bmod n = 0}\\ 0&amp;{(l + k)\bmod n \ne 0} \end{array}} \right.\]</div>
+<p>对<span class="arithmatex">\({\alpha _j}{\rm{ = }}\left( {\begin{array}{*{20}{c}} {{\omega ^{0j}}}\\ {{\omega ^{1j}}}\\  \vdots \\ {{\omega ^{(n - 1)j}}} \end{array}} \right)\)</span>，其分量满足<span class="arithmatex">\({\alpha _j}[p] = {\omega ^{jp}} = \overline {{\omega ^{ - jp}}}  = \overline {{\omega ^{jn - jp}}}  = \overline {{\alpha _j}[n - p]}\)</span> ,<span class="arithmatex">\(j=0,1,...,n-1\)</span>
+，这个叫<strong>共轭对称性</strong>，则</p>
+<div class="arithmatex">\[\left( {\begin{array}{*{20}{c}} {{x_0}}\\ {{x_1}}\\ {{x_2}}\\ {{x_3}} \end{array}} \right){\rm{ = inv}}\left( {\begin{array}{*{20}{c}} 1&amp;1&amp;1&amp;1\\ 1&amp;\omega &amp;{{\omega ^2}}&amp;{{\omega ^3}}\\ 1&amp;{{\omega ^2}}&amp;{{\omega ^4}}&amp;{{\omega ^6}}\\ 1&amp;{{\omega ^3}}&amp;{{\omega ^6}}&amp;{{\omega ^9}} \end{array}} \right)\beta {\rm{ = }}\frac{1}{4}\left( {\begin{array}{*{20}{c}} 1&amp;1&amp;1&amp;1\\ 1&amp;{{\omega ^{ - 1}}}&amp;{{\omega ^{ - 2}}}&amp;{{\omega ^{ - 3}}}\\ 1&amp;{{\omega ^{ - 2}}}&amp;{{\omega ^{ - 4}}}&amp;{{\omega ^{ - 6}}}\\ 1&amp;{{\omega ^{ - 3}}}&amp;{{\omega ^{ - 6}}}&amp;{{\omega ^{ - 9}}} \end{array}} \right)\beta  = \frac{1}{4}\left( {\begin{array}{*{20}{c}} {{{\bar \alpha }_0}}&amp;{{{\bar \alpha }_1}}&amp;{{{\bar \alpha }_2}}&amp;{{{\bar \alpha }_3}} \end{array}} \right)\beta  = \frac{1}{4}\sum\limits_{j = 0}^3 {{{\bar \alpha }_j}{\beta _j}} \]</div>
+<p>哦不对...应该用下面这种分块... </p>
+<div class="arithmatex">\[\left( {\begin{array}{*{20}{c}} {{x_0}}\\ {{x_1}}\\ {{x_2}}\\ {{x_3}} \end{array}} \right){\rm{ = inv}}\left( {\begin{array}{*{20}{c}} 1&amp;1&amp;1&amp;1\\ 1&amp;\omega &amp;{{\omega ^2}}&amp;{{\omega ^3}}\\ 1&amp;{{\omega ^2}}&amp;{{\omega ^4}}&amp;{{\omega ^6}}\\ 1&amp;{{\omega ^3}}&amp;{{\omega ^6}}&amp;{{\omega ^9}} \end{array}} \right)\beta  = \frac{1}{4}\left( {\begin{array}{*{20}{c}} {{\alpha _0}^H}\\ {{\alpha _1}^H}\\ {{\alpha _2}^H}\\ {{\alpha _3}^H} \end{array}} \right)\beta  = \frac{1}{4}\left( {\begin{array}{*{20}{c}} {{\alpha _0}^H\beta }\\ {{\alpha _1}^H\beta }\\ {{\alpha _2}^H\beta }\\ {{\alpha _3}^H\beta } \end{array}} \right)\]</div>
+<p>其中<span class="arithmatex">\({\alpha ^H} = {{\bar \alpha }^T} = \overline {{\alpha ^T}}\)</span>，将<span class="arithmatex">\(X\)</span>代回得到恒等式</p>
+<div class="arithmatex">\[\beta  =  \frac{1}{{\rm{4}}}({\alpha _0}^H\beta ){\alpha _0} +\frac{1}{{\rm{4}}}({\alpha _1}^H\beta ){\alpha _1} + \frac{1}{{\rm{4}}}({\alpha _2}^H\beta ){\alpha _2} + \frac{1}{{\rm{4}}}({\alpha _3}^H\beta ){\alpha _3} = \sum\limits_{i = 0}^3 {\frac{{{\alpha _i}^H\beta }}{{{\alpha _i}^H{\alpha _i}}}} {\alpha _i}\]</div>
+<ul>
+<li>
+<p><strong>我为何选择4阶的矩阵</strong></p>
+<p>首先如果为了省事，应该从低阶到高阶，所以应该从2阶阵出发，BUT很遗憾，<span class="arithmatex">\({F_2} = \left( {\begin{array}{*{20}{c}} 1&amp;1\\ 1&amp;{ - 1} \end{array}} \right)\)</span>
+ ，没有出现复单位根，不具备很强的说服力，所以选4阶。那为何不再看看8阶呢？这么说吧，且不论8阶矩阵的复数乘法，只是试着在64个格子内都填入特定的数字，没有人会觉得不枯燥，如果你真的这么尝试了，那么在看到后面的FFT算法后自然会更有感触。另外一个原因是，4阶的明白了后，自然可以充满自信地说 
+<span class="arithmatex">\(4 \to N\)</span>时显然成立！（这真的很显然）；所以从4阶阵入手，不仅方便举例，还不失一般性，还方便我写入，简直一石三鸟啊有木有！</p>
+</li>
+</ul>
+<h3 id="dft">DFT</h3>
+<p>为何教科书上求DFT时候，在<span class="arithmatex">\(X[k] = \sum\limits_{n = 0}^{N - 1} {{x_n}{W_N}^{nk}}\)</span>中将<span class="arithmatex">\({W_N}^{nk} = {e^{ - \frac{{2\pi i}}{N}nk}}\)</span>定义为负幂次？我们当然可以说因为类比连续时候的<span class="arithmatex">\(\int\limits_{ - l}^l {x(t){e^{ - i\frac{{n\pi t}}{l}}}} {\rm{d}}t\)</span>就是负的幂次，但换一种角度，因为我们最开始是想用那些正幂次来充当基底的向量，所以与
+<span class="arithmatex">\(\beta\)</span>做内积来求系数的任务自然就落到它们的共轭转置的头上了。</p>
+<p>至于那个不知所措的<span class="arithmatex">\(\frac{1}{4}\)</span>,其实放在DFT还是IDFT中都不要紧，为什么？因为对一个已知序列<span class="arithmatex">\(f\)</span>，必然有</p>
+<div class="arithmatex">\[f = {I_4}f = \frac{1}{{\rm{4}}}\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right)\overline {\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right)} f\]</div>
+<p>所以<span class="arithmatex">\(\frac{1}{4}\)</span>想要放在前面后面还是中间，随它吧，有何干系？</p>
+<p>至此，不妨再来体会一下教科书中那套广为人所诟病的通用流程：</p>
+<ul>
+<li><strong>STEP1</strong> 先求下面这个东西，定义为DFT</li>
+</ul>
+<div class="arithmatex">\[F = \overline {\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right)} f\]</div>
+<ul>
+<li><strong>STEP2</strong> 紧接着再求这个，定义为IDFT</li>
+</ul>
+<div class="arithmatex">\[f = \frac{1}{{\rm{4}}}\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right)F\]</div>
+<p>这就是离散形式的Fourier变换了，事情还没有完！我们将目光着眼于关于<span class="arithmatex">\(N\)</span>（偶数）的DFT 的矩阵(单位根<span class="arithmatex">\(\omega=e^{i\frac{2\pi}{N}}\)</span>）</p>
+<p>先算两个性质：首先<span class="arithmatex">\(F_i = \alpha _i^Hf = \alpha _i^H\overline f  = \alpha _{N - i}^T\overline f  = \overline {F_{N-i}}\)</span>，取<span class="arithmatex">\(i=\frac{N}{2}\)</span> ，有<span class="arithmatex">\({F_{\frac{N}{2}}} = \overline {{F_{\frac{N}{2}}}}\)</span></p>
+<p>其次注意到<span class="arithmatex">\(a_i\)</span>与<span class="arithmatex">\(F\)</span>都是复的列向量，都有这种<strong>共轭对称性</strong>，加上<span class="arithmatex">\(\alpha_i^TF=Nf_i\)</span>
+ 是实的，这就仿佛是在告诉我们说：嗨！小伙子，只要你把我写成求和形式后化简，就能得到你想要的。何乐而不为呢？设 <span class="arithmatex">\(F_j=m_je^{i\theta_j}\)</span>
+ ,则 </p>
+<div class="arithmatex">\[{f_k} = \frac{1}{N}{\alpha _k}^TF = \frac{1}{N}\left( {\begin{array}{*{20}{c}} 1&amp;{{e^{i\frac{{2\pi }}{N}k}}}&amp; \ldots &amp;{{e^{i\frac{{2\pi }}{N}\frac{N}{2}k}}}&amp;{{e^{ - i\frac{{2\pi }}{N}(\frac{N}{2} - 1)k}}}&amp; \ldots &amp;{{e^{ - i\frac{{2\pi }}{N}k}}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{F_0}}\\ {{F_1}}\\  \vdots \\ {{F_{\frac{N}{2}}}}\\ {\overline {{F_{\frac{N}{2} - 1}}} }\\  \vdots \\ {\overline {{F_1}} } \end{array}} \right){\rm{ = }}\frac{1}{N}(\sum\limits_{j = 1}^{\frac{N}{2} - 1} {2{\mathop{\rm Re}\nolimits} ({e^{i\frac{{2\pi }}{N}kj}}} {F_j}) + {F_0} - {F_{\frac{N}{2}}}) = \frac{1}{N}(\sum\limits_{j = 1}^{\frac{N}{2} - 1} {2{m_j}\cos( \frac{{2\pi }}{N}kj + {\theta _j}} ) + {F_0} - {F_{\frac{N}{2}}})\]</div>
+<p>所以信号<span class="arithmatex">\(f\)</span>就是对一组频率为<span class="arithmatex">\(\frac{1}{N}\)</span>之倍数的信号采样后所得，假设被采样的信号是<span class="arithmatex">\({\sin (2\pi \eta t + \phi )}\)</span>，每隔 <span class="arithmatex">\(T_s\)</span> 采样一次，采出 <span class="arithmatex">\(N\)</span> 个点，就有 <span class="arithmatex">\(f_n={\sin (2\pi \eta (n{T_s}) + \phi )}\)</span>
+，此时对应的频率为 <span class="arithmatex">\(\eta T_s\)</span> 。由于是同一个信号，取上上个式子 <span class="arithmatex">\(n=L\)</span> ，有 <span class="arithmatex">\(\eta T_s=\frac{j}{N}\)</span> ，即<span class="arithmatex">\(\eta L=j\)</span> ，这样就建立了 <strong>连续信号的频率</strong> &amp; <strong>时间长度</strong>与 <strong><span class="arithmatex">\(N\)</span>之index</strong>的对应关系。</p>
+<h3 id="fft">FFT</h3>
+<p><em>我偏不用蝶形图，你奈我何？</em></p>
+<p>还是从<strong>4阶矩阵</strong>出发（因为三维生物只能仰望四维）</p>
+<p>我们拿到一个序列<span class="arithmatex">\(f\)</span> 后，现在<strong>自信地</strong>对其套用DFT公式</p>
+<div class="arithmatex">\[F = \overline {\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right)} f = \overline {\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right)} \left( {\begin{array}{*{20}{c}} {{f_0}}\\ {{f_1}}\\ {{f_2}}\\ {{f_3}} \end{array}} \right)\]</div>
+<p>要是手算，需要16次复数的乘法，<span class="arithmatex">\(N\)</span>阶序列需要<span class="arithmatex">\(N^2\)</span>次复数乘法。FFT的提出者<strong>Cooley&amp;Tukey</strong>说：我们为何不少算几次呢？因为这个矩阵<strong>显然</strong>可以进行如下的分解啊：</p>
+<div class="arithmatex">\[\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right) = \left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right){I_4} = \left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right){\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;0&amp;0&amp;0\\ 0&amp;0&amp;1&amp;0\\ 0&amp;1&amp;0&amp;0\\ 0&amp;0&amp;0&amp;1 \end{array}} \right)^2}\]</div>
+<p>注意到</p>
+<div class="arithmatex">\[\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;0&amp;0&amp;0\\ 0&amp;0&amp;1&amp;0\\ 0&amp;1&amp;0&amp;0\\ 0&amp;0&amp;0&amp;1 \end{array}} \right){\rm{ = }}\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;\omega &amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right){\rm{ = }}\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;0&amp;{\rm{1}}&amp;0\\ 0&amp;{\rm{1}}&amp;{\rm{0}}&amp;\omega \\ {\rm{1}}&amp;{\rm{0}}&amp;{{\rm{ - 1}}}&amp;0\\ 0&amp;{\rm{1}}&amp;0&amp;{{\rm{ - }}\omega } \end{array}} \right)\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{0}}&amp;0\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}}&amp;{\rm{1}}\\ 0&amp;{\rm{0}}&amp;{\rm{1}}&amp;{{\omega ^{\rm{2}}}} \end{array}} \right){\rm{ = }}\left( {\begin{array}{*{20}{c}} {{I_2}}&amp;{{D_2}}\\ {{I_2}}&amp;{{\rm{ - }}{D_2}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{F_2}}&amp;0\\ 0&amp;{{F_2}} \end{array}} \right)\]</div>
+<p>最终得到</p>
+<div class="arithmatex">\[{F_4} = \left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}} \end{array}} \right){\rm{ = }}\left( {\begin{array}{*{20}{c}} {{I_2}}&amp;{{D_2}}\\ {{I_2}}&amp;{{\rm{ - }}{D_2}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{F_2}}&amp;0\\ 0&amp;{{F_2}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;0&amp;0&amp;0\\ 0&amp;0&amp;1&amp;0\\ 0&amp;1&amp;0&amp;0\\ 0&amp;0&amp;0&amp;1 \end{array}} \right)\]</div>
+<p>将其作用到序列<span class="arithmatex">\(f\)</span>上，最右边的矩阵只起到变换顺序的作用，不贡献乘法；中间的<span class="arithmatex">\({F_{\rm{2}}}{\rm{ = }}\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;{{\rm{ - 1}}} \end{array}} \right)\)</span>
+我们（事后诸葛亮）认为算1次复数乘法，有<span class="arithmatex">\(2\)</span>个；左边的对角 <span class="arithmatex">\(D\)</span>矩阵需要<span class="arithmatex">\(2\)</span> 次，共计 <span class="arithmatex">\(O(F_4)=4=\frac{4}{2}\log4\)</span>
+ 次。都说到这儿了，不妨再看看<span class="arithmatex">\(F_8\)</span>吧</p>
+<div class="arithmatex">\[{F_{\rm{8}}} = \left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;\omega &amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{5}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{7}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{8}}}}&amp;{{\omega ^{{\rm{10}}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{14}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{\rm{9}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{15}}}}}&amp;{{\omega ^{{\rm{18}}}}}&amp;{{\omega ^{{\rm{21}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{8}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{16}}}}}&amp;{{\omega ^{{\rm{20}}}}}&amp;{{\omega ^{{\rm{24}}}}}&amp;{{\omega ^{{\rm{28}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{5}}}}&amp;{{\omega ^{{\rm{10}}}}}&amp;{{\omega ^{{\rm{15}}}}}&amp;{{\omega ^{{\rm{20}}}}}&amp;{{\omega ^{{\rm{25}}}}}&amp;{{\omega ^{{\rm{30}}}}}&amp;{{\omega ^{{\rm{35}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{18}}}}}&amp;{{\omega ^{{\rm{24}}}}}&amp;{{\omega ^{{\rm{30}}}}}&amp;{{\omega ^{{\rm{36}}}}}&amp;{{\omega ^{{\rm{42}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{7}}}}&amp;{{\omega ^{{\rm{14}}}}}&amp;{{\omega ^{{\rm{21}}}}}&amp;{{\omega ^{{\rm{28}}}}}&amp;{{\omega ^{{\rm{35}}}}}&amp;{{\omega ^{{\rm{42}}}}}&amp;{{\omega ^{{\rm{49}}}}} \end{array}} \right){\left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{1}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}}&amp;{\rm{0}}&amp;{\rm{0}}\\ {\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{0}}&amp;{\rm{1}} \end{array}} \right)^{\rm{2}}}{\rm{ = }}{F_8}{P_8}^2\]</div>
+<p>similiarly as before，we have</p>
+<div class="arithmatex">\[{F_8}{P_8} = \left( {\begin{array}{*{20}{c}} {\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}&amp;{\rm{1}}\\ {\rm{1}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{6}}}}&amp;\omega &amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{5}}}}&amp;{{\omega ^{\rm{7}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{\rm{8}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{\rm{2}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{{\rm{10}}}}}&amp;{{\omega ^{{\rm{14}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{18}}}}}&amp;{{\omega ^{\rm{3}}}}&amp;{{\omega ^{\rm{9}}}}&amp;{{\omega ^{{\rm{15}}}}}&amp;{{\omega ^{{\rm{21}}}}}\\ {\rm{1}}&amp;{{\omega ^{\rm{8}}}}&amp;{{\omega ^{{\rm{16}}}}}&amp;{{\omega ^{{\rm{24}}}}}&amp;{{\omega ^{\rm{4}}}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{20}}}}}&amp;{{\omega ^{{\rm{28}}}}}\\ {\rm{1}}&amp;{{\omega ^{{\rm{10}}}}}&amp;{{\omega ^{{\rm{20}}}}}&amp;{{\omega ^{{\rm{30}}}}}&amp;{{\omega ^{\rm{5}}}}&amp;{{\omega ^{{\rm{15}}}}}&amp;{{\omega ^{{\rm{25}}}}}&amp;{{\omega ^{{\rm{35}}}}}\\ {\rm{1}}&amp;{{\omega ^{{\rm{12}}}}}&amp;{{\omega ^{{\rm{24}}}}}&amp;{{\omega ^{{\rm{36}}}}}&amp;{{\omega ^{\rm{6}}}}&amp;{{\omega ^{{\rm{18}}}}}&amp;{{\omega ^{{\rm{30}}}}}&amp;{{\omega ^{{\rm{42}}}}}\\ {\rm{1}}&amp;{{\omega ^{{\rm{14}}}}}&amp;{{\omega ^{{\rm{28}}}}}&amp;{{\omega ^{{\rm{42}}}}}&amp;{{\omega ^{\rm{7}}}}&amp;{{\omega ^{{\rm{21}}}}}&amp;{{\omega ^{{\rm{35}}}}}&amp;{{\omega ^{{\rm{49}}}}} \end{array}} \right){\rm{ = }}\left( {\begin{array}{*{20}{c}} {{I_4}}&amp;{{D_4}}\\ {{I_4}}&amp;{{\rm{ - }}{D_4}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{F_4}}&amp;0\\ 0&amp;{{F_4}} \end{array}} \right)\]</div>
+<p><strong>注：</strong>如果你对上一步迷惑，这是正常的，不迷惑才不正常！因为根据单位根的性质，现在 
+<span class="arithmatex">\(F_8\)</span>中<span class="arithmatex">\(\omega^2\)</span>才是<span class="arithmatex">\(F_4\)</span>中的<span class="arithmatex">\(\omega\)</span> ，所以两个矩阵中的<span class="arithmatex">\(\omega\)</span>并不是同一个数！(为何不用两个数以作区分呢？因为打字很费时间，将就着看吧...(我的我的))</p>
+<p><strong>再注：</strong>矩阵<span class="arithmatex">\(D_4=diag(1,\omega,\omega^2,\omega^3)\)</span>是从<span class="arithmatex">\(D_8\)</span>中来的，所以其中的 <span class="arithmatex">\(\omega\)</span> 是8次单位根。同理，<span class="arithmatex">\(D_{2^{m-1}}\)</span> 中的
+ <span class="arithmatex">\(\omega\)</span>是 <span class="arithmatex">\(2^m\)</span> 次单位根,懂？</p>
+<p><em>cont'd——</em></p>
+<div class="arithmatex">\[{F_8}{P_8}^2 = \left( {\begin{array}{*{20}{c}} {{I_4}}&amp;{{D_4}}\\ {{I_4}}&amp;{{\rm{ - }}{D_4}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{F_4}}&amp;0\\ 0&amp;{{F_4}} \end{array}} \right){P_8} = \left( {\begin{array}{*{20}{c}} {{I_4}}&amp;{{D_4}}\\ {{I_4}}&amp;{{\rm{ - }}{D_4}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {\left( {\begin{array}{*{20}{c}} {{I_2}}&amp;{{D_2}}\\ {{I_2}}&amp;{{\rm{ - }}{D_2}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{F_2}}&amp;0\\ 0&amp;{{F_2}} \end{array}} \right){P_4}}&amp;0\\ 0&amp;{\left( {\begin{array}{*{20}{c}} {{I_2}}&amp;{{D_2}}\\ {{I_2}}&amp;{{\rm{ - }}{D_2}} \end{array}} \right)\left( {\begin{array}{*{20}{c}} {{F_2}}&amp;0\\ 0&amp;{{F_2}} \end{array}} \right){P_4}} \end{array}} \right){P_8}\]</div>
+<p>从右往左看，排列矩阵不用管，中间是两个<span class="arithmatex">\(F_4\)</span>的计算量，最左边考虑一次对角阵<span class="arithmatex">\(D_4\)</span> ..它总共需要的复数乘法次数 <span class="arithmatex">\(O(F_8)=2×O(F_4)+4=12=\frac{8}{2}\log8\)</span></p>
+<p>所以可以归纳出：(归纳过程留作习题(<strong>提示:</strong><span class="arithmatex">\(2×(\frac{2^{k-1}}{2}  \log2^{k-1})+2^{k-1}=\frac{2^k}{2}\log2^{k}\)</span>))</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code>DFT</code></th>
+<th><code>FFT</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Order</code></td>
+<td><span class="arithmatex">\(N^2\)</span></td>
+<td><span class="arithmatex">\(\frac{N}{2}\log{N}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>由<span class="arithmatex">\(\mathop {\lim }\limits_{x \to \infty } \frac{{\log x}}{{{x^\varepsilon }}} = \mathop {\lim }\limits_{x \to \infty } \frac{1}{{{x^{1 + \varepsilon }}\ln 2}} = 0\)</span>
+ ，可知FFT的运算量要小于<span class="arithmatex">\(\frac{N^{1+\epsilon}}{2}\)</span>,而<span class="arithmatex">\(\epsilon\)</span>是趋于<span class="arithmatex">\(0\)</span>的，所以相当于从二次增长变成线性增长。</p>
+<p>..</p>
+<p>..</p>
+<p>..</p>
+<p>--<strong>end</strong></p>
 
 
 
@@ -426,6 +653,12 @@
           
           
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -453,10 +686,22 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.expand", "navigation.path", "navigation.top"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
       
     
   </body>

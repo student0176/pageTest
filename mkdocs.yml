@@ -1,49 +1,89 @@
 site_name: 采风之旅
+site_url: https://github.com/student0176/pageTest/
 theme:
   name: 'material'
-#  language: zh-Hant
-
-  font:
-    text: Roboto Mono
-
-  palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
-      accent: red
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to light mode
-      accent: cyan
-
+  icon:
+    logo: fontawesome/solid/user-nurse #昵称旁边的logo
   features:
+#    - navigation.tabs #上方导航栏
+    - navigation.sections
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.expand
     - navigation.path
+#    - navigation.prone
     - navigation.top
-#    - header.autohide
-#    - announce.dismiss
+    - navigation.footer
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+  #    - header.autohide
+  #    - announce.dismiss
+  language: en
 
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: light blue
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+        primary: teal
+      accent: light blue #交互的颜色
+
+
+#plugins:
+#  - soclai #卡片？
+
+extra:
+  social: #右下角图标
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/408767554
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/student0176
+#copyright: #版权信息
+#  &copy; 2023 <a href="https://github.com/student0176/pageTest" target="_blank" rel="noopner">James Willett</a>
 
 markdown_extensions:
+  - admonition #彩色正文框 有warning tip info note
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.arithmatex:
-      generic: true
+
+
 
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  #- https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js 点击特效
 
   - javascripts/katex.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
@@ -58,11 +98,12 @@ extra_css:
 
 
 nav:
-  - ID:虞廷采风人: index.md
+  - :)  : index.md
 
   - 笔记文章:
-      - 读后感: license.md
-      - 自创: license2.md
+      - <b>读三百</b>: 3hundred.md
+      - <b>读七篇</b>: seven.md
+      - <b>自创</b>: mypoem.md
   - 带公式的:
-      - DFT与FFT:分块矩阵的用武之地: about.md
-      - 一道练习题: exer
+      - <b>DFT与FFT：分块矩阵的用武之地</b>: about.md
+      - <b>一道练习题</b>: exer
