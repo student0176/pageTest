@@ -1,6 +1,6 @@
 <font size=5>————战国乱世中的大丈夫</font>
 
-<font size=3.5>**FEBRUARY 1, 2022** | UPDATED NOV 9, 2023</font>
+<font size=3.5>**FEBRUARY 1, 2022** | UPDATED NOVEMBER 9, 2023</font>
 
 <br><br>
 

@@ -39,8 +39,6 @@ class Cat:
     def forward(self):
         print(self.a)
 ```
-
-
 > 这是一个提示[github](https://github.com/student0176/pageTest/)<br>
 > 是
 

@@ -106,4 +106,5 @@ nav:
       - <b>自创</b>: mypoem.md
   - 带公式的:
       - <b>DFT与FFT：分块矩阵的用武之地</b>: about.md
+      - <b>学以致用：Fourier级数画图教程</b>: fdraw.md
       - <b>一道练习题</b>: exer
