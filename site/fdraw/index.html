@@ -1,0 +1,906 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/student0176/pageTest/fdraw/">
+      
+      
+        <link rel="prev" href="../about/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>学以致用：Fourier级数画图教程 - 采风之旅</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="采风之旅" class="md-header__button md-logo" aria-label="采风之旅" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M96 128V70.2c0-13.3 8.3-25.3 20.8-30l96-36c7.2-2.7 15.2-2.7 22.5 0l96 36c12.5 4.7 20.8 16.6 20.8 30V128h-.3c.2 2.6.3 5.3.3 8v40c0 70.7-57.3 128-128 128s-128-57.3-128-128v-40c0-2.7.1-5.4.3-8H96zm48 48c0 44.2 35.8 80 80 80s80-35.8 80-80v-16H144v16zm-32.1 151.7c10.5-3.4 21.8.4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5 65 20.9 112 81.7 112 153.6 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6zM208 48v16h-16c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h16v16c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8V96h16c4.4 0 8-3.6 8-8V72c0-4.4-3.6-8-8-8h-16V48c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            采风之旅
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              <b>学以致用：Fourier级数画图教程</b>
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="采风之旅" class="md-nav__button md-logo" aria-label="采风之旅" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M96 128V70.2c0-13.3 8.3-25.3 20.8-30l96-36c7.2-2.7 15.2-2.7 22.5 0l96 36c12.5 4.7 20.8 16.6 20.8 30V128h-.3c.2 2.6.3 5.3.3 8v40c0 70.7-57.3 128-128 128s-128-57.3-128-128v-40c0-2.7.1-5.4.3-8H96zm48 48c0 44.2 35.8 80 80 80s80-35.8 80-80v-16H144v16zm-32.1 151.7c10.5-3.4 21.8.4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5 65 20.9 112 81.7 112 153.6 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6zM208 48v16h-16c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h16v16c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8V96h16c4.4 0 8-3.6 8-8V72c0-4.4-3.6-8-8-8h-16V48c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8z"/></svg>
+
+    </a>
+    采风之旅
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    :)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    笔记文章
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            笔记文章
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3hundred/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    <b>读三百</b>
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seven/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    <b>读七篇</b>
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mypoem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    <b>自创</b>
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    带公式的
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            带公式的
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    <b>DFT与FFT：分块矩阵的用武之地</b>
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    <b>学以致用：Fourier级数画图教程</b>
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    <b>学以致用：Fourier级数画图教程</b>
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    理论
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    实践
+  </a>
+  
+    <nav class="md-nav" aria-label="实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step1-" class="md-nav__link">
+    STEP1--描点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step2-" class="md-nav__link">
+    STEP2--得出点坐标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step3-" class="md-nav__link">
+    STEP3--调整点在画布中的位置分布
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step4-" class="md-nav__link">
+    STEP4--画图
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exer" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    <b>一道练习题</b>
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1><b>学以致用：Fourier级数画图教程</b></h1>
+
+<p><font size=5>————面向小白的优雅画图指导</font></p>
+<p><font size=3.5><strong>AUGUST 16, 2023</strong> | UPDATED NOVEMBER 16 (my birthday!!!), 2023</font></p>
+<p><br><br><font size=4>
+这篇文章是写给那些想迫切地学会用Fourier画图的人的，相信看完后读者一定能达成目标，就算没有，也不会让你白看一遍！</p>
+<div class="admonition warning">
+<p class="admonition-title"><font size=4><strong>写在前面</strong></size></p>
+<ul>
+<li>基本的fourier级数相关的东西要晓得，如果不知道，也要清楚它大概是干嘛的；</li>
+<li>一笔画闭合曲线的描点图是用Adobe Illustrater的钢笔工具完成的，其他软件理论上也可以，只要能够描点并将路径保存为svg文件即可；</li>
+<li>svg文件需要进行处理才能得到一些坐标点，处理过程由python的svgpathtools库来完成；</li>
+<li>画图程序的代码是在p5js.org这个网页上跑的（<del>先看看能不能登上去</del>）。</li>
+</ul>
+</div>
+<p><br><br></p>
+<h2 id="_1"><font color=DodgerBlue font size=6><strong>理论</strong></font></h2>
+<p><font size=4>fourier画图就是对一个满足Direclet条件的函数，都可以用一堆 <span class="arithmatex">\(\sin\)</span> 跟 <span class="arithmatex">\(\cos\)</span> 来近似它。什么，你不知道什么是Direclet条件？笨蛋，Direclet条件就是Direclet这个人提出的一个充分不必要条件啊！看下面：</p>
+<blockquote>
+<ul>
+<li>第一，绝对不意气用事</li>
+<li>第二，绝对不漏判任何一件坏事</li>
+<li>第三，绝对裁判的公正漂亮</li>
+</ul>
+</blockquote>
+<p>不对，串台了...应该是这个：</p>
+<blockquote>
+<ul>
+<li>一个周期内连续或第一类间断点数目有限</li>
+<li>一个周期内极值点数目有限</li>
+<li>一个周期内函数绝对可积</li>
+</ul>
+</blockquote>
+<p>就拿方波函数
+<span class="arithmatex">\(f(t) = \left\{ {\begin{array}{*{20}{c}}
+1&amp;{|t| &lt; 0.5}\\
+-1&amp;{0.5&lt;|t|&lt;1}
+\end{array}} \right.\)</span>
+来说，教材上明确表示其Fourier级数为<span class="arithmatex">\(\frac{4}{\pi}  \sum\limits_{n = 1}^\infty  \frac{(-1)^{n-1} \cos (2n-1)t}{2n-1}\)</span> ，至于怎么算的，教材上说的就去看教材好了，我们这里只说用编程来画图！！！
+所以理论上任何周期函数都可以遵循这套流程，知道了它分解后的sin与cos的成分，接下来百编程画图就是水到渠成了！（也没那么水到渠成）
+我们这里要弄的是一个平面一笔画，就是说平面上的点都可以写成<span class="arithmatex">\(z(t)=x(t)+iy(t)\)</span>的形式。仔细一看，并没有比之前的情况走得多远：由于是个一笔画，所以<span class="arithmatex">\(z(t)\)</span>具有周期性，所以<span class="arithmatex">\(x(t)\)</span>与<span class="arithmatex">\(x(t)\)</span>具有周期性，只需要分别对它们求对应的Fourier级数，分别画图，然后将结果综合起来即可。</p>
+<div class="admonition note">
+<p class="admonition-title"><font size=4><strong>注：</strong></size></p>
+<p>写成<span class="arithmatex">\(z(t)=x(t)+iy(t)\)</span>是为了便于类比，但这里我们是要在程序中画图，所以是应当是离散的时间，故<span class="arithmatex">\(z(n)=x(n)+iy(n)\)</span>，我们的Fourier级数也就成为了离散版本的<a href="../about/">DFT</a>。</p>
+</div>
+<p><font size=4>理论已经拿下，下面开始实践！
+<br><br></p>
+<h2 id="_2"><font color=DodgerBlue  font size=6><strong>实践</strong></font></h2>
+<h4 id="step1-"><font size=5>STEP1--描点</font><font size=4></h4>
+<p>没有点怎么画图？所以先找到自己想要绘制的图片，用钢笔工具进行描点，得到一条闭合路径。像这样：<br><br>
+<img alt="处理前" height="27%" src="../images/Newton.jpg" width="27%" />  &nbsp;&nbsp;&nbsp;&nbsp;
+<img alt="处理后" height="30.7%" src="../images/AII.PNG" width="30.7%" />
+<br></p>
+<div class="admonition note">
+<p class="admonition-title"><font size=3><strong>注：</strong></size></p>
+<ul>
+<li>这里描绘路径上的点尽可能密集一些，最后得到的结果会更好；<br></li>
+<li>本人<strong>十分尊重</strong>Newton先生，这里为了一笔画不断才显得有些滑稽，没有故意恶搞的意思。</li>
+</ul>
+</div>
+<h4 id="step2-"><font size=5>STEP2--得出点坐标</font><font size=4></h4>
+<p>将这些点所围的路径选中，鼠标右击-导出所选项目-选择svg格式，然后用pycharm打开此svg文件，<del>不出意外的话</del>应该是这种风格的：<br>
+<div class="highlight"><span class="filename">NewtonSVG.svg</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">&lt;</span><span class="n">svg</span> <span class="n">xmlns</span><span class="o">=</span><span class="s2">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="n">viewBox</span><span class="o">=</span><span class="s2">&quot;0 0 1620 1887.65&quot;</span><span class="o">&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="o">&lt;</span><span class="n">defs</span><span class="o">&gt;&lt;</span><span class="n">style</span><span class="o">&gt;.</span><span class="n">cls</span><span class="o">-</span><span class="mi">1</span><span class="p">{</span><span class="n">fill</span><span class="p">:</span><span class="c1">#fff;}&lt;/style&gt;&lt;/defs&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="n">资源</span> <span class="mi">2</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="o">&lt;</span><span class="n">g</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;图层_2&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;图层 2&quot;</span><span class="o">&gt;&lt;</span><span class="n">g</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;图层_1-2&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;图层 1&quot;</span><span class="o">&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="o">&lt;</span><span class="n">path</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;cls-1&quot;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="hll">              <span class="n">d</span><span class="o">=</span><span class="s2">&quot;M0,1887.65l42.26-82.17,58.7-115,70.43-115,79.83-77.48,89.21-77.48,101-70.43&quot;</span><span class="o">.../&gt;</span>
+</span><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="o">&lt;/</span><span class="n">g</span><span class="o">&gt;&lt;/</span><span class="n">g</span><span class="o">&gt;&lt;/</span><span class="n">svg</span><span class="o">&gt;</span>
+</code></pre></div>
+本来只有一行，为了显示方便我进行了调整。别看这么多东西，我们需要的只有标出来的那个<code>d</code>，它里面存有路径点坐标信息，不过用的是另一套表示方法，我们想要的是笛卡尔直角坐标的那种，怎么办呢？</p>
+<p>python大法，启动！</p>
+<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">trans_to_Descartes.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">svgpathtools</span> <span class="kn">import</span> <span class="n">parse_path</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="hll"><span class="n">d_string</span> <span class="o">=</span> <span class="s2">&quot;M0,1887.65l42.26-82.17,58.7-115,70.43-115,...&quot;</span>
+</span><a id="__codelineno-1-4" name="__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="n">path_data</span> <span class="o">=</span> <span class="n">parse_path</span><span class="p">(</span><span class="n">d_string</span><span class="p">)</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="n">coords</span> <span class="o">=</span> <span class="p">[(</span><span class="n">segment</span><span class="o">.</span><span class="n">start</span><span class="o">.</span><span class="n">real</span><span class="p">,</span> <span class="n">segment</span><span class="o">.</span><span class="n">start</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span> <span class="k">for</span> <span class="n">segment</span> <span class="ow">in</span> <span class="n">path_data</span><span class="p">]</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="k">def</span> <span class="nf">transform_coordinates</span><span class="p">(</span><span class="n">coordinates</span><span class="p">):</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a>    <span class="n">transformed_coordinates</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">coord</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">coord</span><span class="p">[</span><span class="mi">1</span><span class="p">]}</span> <span class="k">for</span> <span class="n">coord</span> <span class="ow">in</span> <span class="n">coordinates</span><span class="p">]</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a>    <span class="k">return</span> <span class="n">transformed_coordinates</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="n">z</span> <span class="o">=</span> <span class="n">transform_coordinates</span><span class="p">(</span><span class="n">coords</span><span class="p">)</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="n">z_str</span> <span class="o">=</span> <span class="nb">repr</span><span class="p">(</span><span class="n">z</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;},&quot;</span><span class="p">,</span> <span class="s2">&quot;},</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">z_str</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+把svg文件的那个<code>d</code>赋值给<code>d_string</code>后，就会在<code>coords</code>变量中得到我们所需要的笛卡尔坐标点，然后定义<code>transform_coordinates</code>函数，用于将坐标进一步调整为<code>p5.js</code>可用的样式，大概是这种：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">[{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mf">1887.65</span><span class="p">},</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">42.26</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mf">1805.48</span><span class="p">},</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">100.96</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mf">1690.48</span><span class="p">},</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">171.39</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mf">1575.48</span><span class="p">},</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">251.22</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mf">1498.0</span><span class="p">},</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        <span class="o">...</span> 
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="o">...</span>  
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mf">1887.6899</span><span class="p">}]</span>
+</code></pre></div>
+然后将其<strong>复制</strong>。
+<br><br></p>
+<div class="admonition claim">
+<p class="admonition-title"><font size=3>叠个甲</p>
+<p>由于本人并不懂<code>javascript</code>，所以这一块代码框架用的是Daniel Shiffman写的，相关的信息在下面列出：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="w"> </span><span class="nx">Coding</span><span class="w"> </span><span class="nx">Challenge</span><span class="w"> </span><span class="mf">130.1</span><span class="o">:</span><span class="w"> </span><span class="nx">Drawing</span><span class="w"> </span><span class="kd">with</span><span class="w"> </span><span class="nx">Fourier</span><span class="w"> </span><span class="nx">Transform</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">Epicycles</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w"> </span><span class="nx">Daniel</span><span class="w"> </span><span class="nx">Shiffman</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w"> </span><span class="nx">https</span><span class="o">:</span><span class="c1">//thecodingtrain.com/CodingChallenges/130.1-fourier-transform-drawing.html </span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w"> </span><span class="nx">https</span><span class="o">:</span><span class="c1">//youtu.be/MY4luNgGfms </span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="hll"><span class="w"> </span><span class="nx">https</span><span class="o">:</span><span class="c1">//editor.p5js.org/codingtrain/sketches/ldBlISrsQ </span>
+</span></code></pre></div>
+如果想知道Shiffman编程的经过，可以点开相应的视频观看。<del>不过我们这里只是借他的代码一用</del>，所以只消打开标亮的那个网址就好[doge]</p>
+</div>
+<h4 id="step3-"><font size=5>STEP3--调整点在画布中的位置分布</font><font size=4></h4>
+<p>在使用Shiffman的代码画图之前，我们要先看看自己找的坐标点位置分布，是不是在画布可显示的范围之内，如果不能，就需要进行调整，所以我们新建一个独立的<code>test.js</code>文件，里面有
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">test.js</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span>
+<span class="normal"><a href="#__codelineno-4-13">13</a></span>
+<span class="normal"><a href="#__codelineno-4-14">14</a></span>
+<span class="normal"><a href="#__codelineno-4-15">15</a></span>
+<span class="normal"><a href="#__codelineno-4-16">16</a></span>
+<span class="normal"><a href="#__codelineno-4-17">17</a></span>
+<span class="normal"><a href="#__codelineno-4-18">18</a></span>
+<span class="normal"><a href="#__codelineno-4-19">19</a></span>
+<span class="normal"><a href="#__codelineno-4-20">20</a></span>
+<span class="normal"><a href="#__codelineno-4-21">21</a></span>
+<span class="normal"><a href="#__codelineno-4-22">22</a></span>
+<span class="normal"><a href="#__codelineno-4-23">23</a></span>
+<span class="normal"><a href="#__codelineno-4-24">24</a></span>
+<span class="normal"><a href="#__codelineno-4-25">25</a></span>
+<span class="normal"><a href="#__codelineno-4-26">26</a></span>
+<span class="normal"><a href="#__codelineno-4-27">27</a></span>
+<span class="normal"><a href="#__codelineno-4-28">28</a></span>
+<span class="normal"><a href="#__codelineno-4-29">29</a></span>
+<span class="normal"><a href="#__codelineno-4-30">30</a></span>
+<span class="normal"><a href="#__codelineno-4-31">31</a></span>
+<span class="normal"><a href="#__codelineno-4-32">32</a></span>
+<span class="normal"><a href="#__codelineno-4-33">33</a></span>
+<span class="normal"><a href="#__codelineno-4-34">34</a></span>
+<span class="normal"><a href="#__codelineno-4-35">35</a></span>
+<span class="normal"><a href="#__codelineno-4-36">36</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">scaleCoordinates</span><span class="p">(</span><span class="nx">drawing</span><span class="p">,</span><span class="w"> </span><span class="nx">b1</span><span class="p">,</span><span class="w"> </span><span class="nx">b2</span><span class="p">,</span><span class="w"> </span><span class="nx">k</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">scaledDrawing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">drawing</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">scaledX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">drawing</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">x</span><span class="o">+</span><span class="nx">b1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">k</span><span class="p">;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">scaledY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">drawing</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">y</span><span class="o">+</span><span class="nx">b2</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">k</span><span class="p">;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">    </span><span class="nx">scaledDrawing</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="s1">&#39;x&#39;</span><span class="o">:</span><span class="w"> </span><span class="nx">scaledX</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;y&#39;</span><span class="o">:</span><span class="w"> </span><span class="nx">scaledY</span><span class="p">});</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">scaledDrawing</span><span class="p">;</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="p">}</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="hll"><span class="kd">let</span><span class="w"> </span><span class="nx">drawing_pre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+</span><a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="w"> </span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;y&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">1887.65</span><span class="p">},</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="w"> </span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">42.26</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;y&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">1805.48</span><span class="p">},</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="w"> </span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">100.96</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;y&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">1690.48</span><span class="p">},</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="w"> </span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">171.39</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;y&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">1575.48</span><span class="p">},</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16"></a><span class="w"> </span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">251.22</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;y&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">1498.0</span><span class="p">},</span><span class="w"> </span>
+<a id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="w">    </span><span class="p">...</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="w">    </span><span class="p">...</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19"></a><span class="w"> </span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">1608.26</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;y&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">1875.95</span><span class="p">},</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="w"> </span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">1258.43</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;y&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">1887.69</span><span class="p">},</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21"></a><span class="w"> </span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;y&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">1887.69</span><span class="p">}</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22"></a><span class="p">];</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23"></a>
+<a id="__codelineno-4-24" name="__codelineno-4-24"></a><span class="hll"><span class="kd">let</span><span class="w"> </span><span class="nx">drawing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">scaleCoordinates</span><span class="p">(</span><span class="nx">drawing_pre</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span>
+</span><a id="__codelineno-4-25" name="__codelineno-4-25"></a>
+<a id="__codelineno-4-26" name="__codelineno-4-26"></a><span class="kd">function</span><span class="w"> </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27"></a><span class="w">   </span><span class="nx">createCanvas</span><span class="p">(</span><span class="mf">800</span><span class="p">,</span><span class="w"> </span><span class="mf">800</span><span class="p">);</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28"></a><span class="p">}</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29"></a><span class="kd">function</span><span class="w"> </span><span class="nx">draw</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30"></a><span class="w">    </span><span class="nx">background</span><span class="p">(</span><span class="mf">255</span><span class="p">);</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">drawing</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32"></a><span class="w">    </span><span class="nx">point</span><span class="p">(</span><span class="nx">drawing</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">drawing</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">);</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33"></a><span class="w">    </span><span class="nx">stroke</span><span class="p">(</span><span class="s1">&#39;purple&#39;</span><span class="p">);</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34"></a><span class="w">    </span><span class="nx">strokeWeight</span><span class="p">(</span><span class="mf">10</span><span class="p">);</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-36" name="__codelineno-4-36"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+这里<code>drawing_pre</code>是我们先前复制的坐标列表，<code>setup</code>函数创建了一块800像素的画布，<code>draw</code>用于绘制坐标点，我们运行程序后，得到这个</p>
+<blockquote>
+<p>前方高能，请务必在夜间模式下观看！</p>
+</blockquote>
+<p><img alt="a" height="40%" src="../images/blank.png" width="40%" /></p>
+<p>咦，我图呢？
+这种情况下就是<code>scaleCoordinates</code>函数发挥作用的时候了，它可以将全体像素点同时进行平移、缩放，相应的数值对应于传入的4个参数中的后三个。<br>经过短暂的（<del>这真的很短暂</del>）调参后，我将上面程序高亮的那一行参数设为<code>scaleCoordinates(drawing_pre, -1200, -1350, 0.3)</code>后，伟大的Issac Newton头像就处在了画布中心区域。<br></p>
+<p><img alt="s" height="40%" src="../images/scalar.png" width="40%" />
+<br></p>
+<h4 id="step4-"><font size=5>STEP4--画图</font><font size=4></h4>
+<p>Shifman的代码发挥作用的时候到了，将之前<code>test.js</code>的第25行之后的代码都注释掉，并全选后复制，然后用它覆盖掉Shiffman代码文件<code>ct.js</code>里面的所有内容，然后到<code>sketch.js</code>下先将变量<code>const skip</code>的值由8改成1，再运行。如果没显示，回到<code>ct.js</code>中修改参数即可。
+<br><br></p>
+<blockquote>
+<p><strong>Mr.Newton</strong>：</p>
+</blockquote>
+<p><img alt="" src="../images/newton.gif" /></p>
+<blockquote>
+<p><strong>Mr.Leibniz</strong></p>
+</blockquote>
+<p><img alt="处理前" height="27%" src="../images/Leibniz.jpg" width="27%" />  &nbsp;&nbsp;&nbsp;&nbsp;
+<img alt="处理后" height="44.2%" src="../images/Leibniz.gif" width="44.2%" /></p>
+<blockquote>
+<p><strong>Mr.Huygens</strong></p>
+</blockquote>
+<p><img alt="处理前" height="27%" src="../images/Huygens.png" width="27%" />  &nbsp;&nbsp;&nbsp;&nbsp;
+<img alt="处理后" height="43.9%" src="../images/mrHuygens.gif" width="43.9%" /></p>
+<p><br><br><br><br></p>
+<blockquote>
+<p>----<font size=5 ><strong>送给惠更斯先生<img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f604.svg" title=":smile:" /></strong></font></p>
+</blockquote>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../about/" class="md-footer__link md-footer__link--prev" aria-label="Previous: &lt;b&gt;DFT与FFT：分块矩阵的用武之地&lt;/b&gt;">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                <b>DFT与FFT：分块矩阵的用武之地</b>
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://space.bilibili.com/408767554" target="_blank" rel="noopener" title="space.bilibili.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0s16.1 2.868 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0c8.8 0 16.1 2.868 21.9 8.603 5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1zm-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8 6.3-6.5 9.7-14.3 10.1-23.5V173.8zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5-9.6 0-17.5-3.2-23.6-9.5-6.1-6.3-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2 6.3-6.3 13.2-9.6 23.3-10 9.2.4 17 3.7 23.3 10zm191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.1 6.3-14 9.5-23.6 9.5-9.6 0-17.4-3.2-23.6-9.5-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2 6.3-6.3 14.1-9.6 23.3-10 9.2.4 17 3.7 23.3 10z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/student0176" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.instant", "navigation.instant.prefetch", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
