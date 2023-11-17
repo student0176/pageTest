@@ -43,9 +43,9 @@ $f(t) = \left\{ {\begin{array}{*{20}{c}}
 
 ### <font color=DodgerBlue  font size=5>**实践**</font> 
 
+> 建议跟俺的[B站视频]()https://www.bilibili.com/video/BV19N411u71A搭配食用
 
 #### <font size=4>STEP1--描点</font>
-> 建议跟俺的[B站视频]()https://www.bilibili.com/video/BV19N411u71A搭配食用
 
 没有点怎么画图？所以先找到自己想要绘制的图片，用钢笔工具进行描点，得到一条闭合路径。像这样：<br><br>
 ![处理前](images/Newton.jpg){: width="27%" height="27%"}  &nbsp;&nbsp;&nbsp;&nbsp;
