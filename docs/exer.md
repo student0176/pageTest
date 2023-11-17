@@ -1,4 +1,9 @@
 
+<script src="javascripts/extra.js"></script>
+<div id="cursor"></div>
+
+
+
 **Q:** $S(x)=\sum_{k=0}^{∞} { k+m+1 \choose m+1 }\frac{x^k }{k!}$
 
 **A:**
