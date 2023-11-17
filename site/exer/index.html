@@ -46,6 +46,8 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -471,6 +473,9 @@
 
   <h1>Exer</h1>
 
+<script src="javascripts/extra.js"></script>
+<div id="cursor"></div>
+
 <p><strong>Q:</strong> <span class="arithmatex">\(S(x)=\sum_{k=0}^{∞} { k+m+1 \choose m+1 }\frac{x^k }{k!}\)</span></p>
 <p><strong>A:</strong></p>
 <p><span class="arithmatex">\(S(x)=\sum_{k=0}^{∞} { k+m+1 \choose k }\frac{x^k }{k!} =\sum_{k=0}^{∞} { k+m \choose k-1 }\frac{x^k }{k!} +\sum_{k=0}^{∞} { k+m \choose k }\frac{x^k }{k!}\)</span></p>
@@ -616,6 +621,8 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
       
         <script src="../javascripts/katex.js"></script>
       

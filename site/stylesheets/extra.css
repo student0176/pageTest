@@ -1,0 +1,36 @@
+/*鼠标跟随底色，虽然把background->background-color解决了一个报错，仍然不对，gpt老师加了一个<div id>"cursor"</div>，就好了。然后删掉也好了，不知道为啥...*/
+#cursor {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(57, 197, 187);
+    border-radius: 8px;
+    opacity: 0.25;
+    z-index: 10086;
+    pointer-events: none;
+    transition: 0.2s ease-in-out;
+    transition-property: background-color, opacity, transform;
+}
+  
+  #cursor.hidden {
+    opacity: 0;
+  }
+  
+  #cursor.hover {
+    opacity: 0.1;
+    transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+  }
+  
+  #cursor.active {
+    opacity: 0.5;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
+  

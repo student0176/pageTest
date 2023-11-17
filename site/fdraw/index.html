@@ -48,6 +48,8 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -609,10 +611,10 @@
 <p>理论已经拿下，下面开始实践！
 <br><br></p>
 <h3 id="_2"><font color=DodgerBlue  font size=5><strong>实践</strong></font></h3>
-<h4 id="step1-"><font size=4>STEP1--描点</font></h4>
 <blockquote>
-<p>建议跟俺的<a href="">B站视频</a>https://www.bilibili.com/video/BV19N411u71A搭配食用</p>
+<p>建议跟俺的<a href="https://www.bilibili.com/video/BV19N411u71A">B站视频</a>搭配食用</p>
 </blockquote>
+<h4 id="step1-"><font size=4>STEP1--描点</font></h4>
 <p>没有点怎么画图？所以先找到自己想要绘制的图片，用钢笔工具进行描点，得到一条闭合路径。像这样：<br><br>
 <img alt="处理前" height="27%" src="../images/Newton.jpg" width="27%" />  &nbsp;&nbsp;&nbsp;&nbsp;
 <img alt="处理后" height="30.7%" src="../images/AII.PNG" width="30.7%" />
@@ -625,7 +627,7 @@
 </ul>
 </div>
 <h4 id="step2-"><font size=4>STEP2--得出点坐标</font></h4>
-<p>将这些点所围的路径选中，鼠标右击-导出所选项目-选择svg格式，然后用pycharm打开此svg文件，<del>不出意外的话</del>应该是这种风格的：<br>
+<p>将这些点所围的路径选中，鼠标右击 --&gt; 导出所选项目 --&gt; 选择svg格式，然后用pycharm打开此svg文件，<del>不出意外的话</del>应该是这种风格的：<br>
 <div class="highlight"><span class="filename">NewtonSVG.svg</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">&lt;</span><span class="n">svg</span> <span class="n">xmlns</span><span class="o">=</span><span class="s2">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="n">viewBox</span><span class="o">=</span><span class="s2">&quot;0 0 1620 1887.65&quot;</span><span class="o">&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="o">&lt;</span><span class="n">defs</span><span class="o">&gt;&lt;</span><span class="n">style</span><span class="o">&gt;.</span><span class="n">cls</span><span class="o">-</span><span class="mi">1</span><span class="p">{</span><span class="n">fill</span><span class="p">:</span><span class="c1">#fff;}&lt;/style&gt;&lt;/defs&gt;</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="n">资源</span> <span class="mi">2</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
@@ -898,6 +900,8 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
       
         <script src="../javascripts/katex.js"></script>
       
