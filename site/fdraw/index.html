@@ -563,11 +563,11 @@
   <h1><b>学以致用：Fourier级数画图教程</b></h1>
 
 <p><font size=5>————面向小白的优雅画图指导</font></p>
-<p><font size=3.5><strong>AUGUST 16, 2023</strong> | UPDATED NOVEMBER 16 (my birthday!!!), 2023</font></p>
-<p><br><br><font size=4>
+<p><font size=3.5><strong>AUGUST 16, 2023</strong> | UPDATED NOVEMBER 16 (MY BIRTHDAY!!!), 2023</font></p>
+<p><br><br>
 这篇文章是写给那些想迫切地学会用Fourier画图的人的，相信看完后读者一定能达成目标，就算没有，也不会让你白看一遍！</p>
 <div class="admonition warning">
-<p class="admonition-title"><font size=4><strong>写在前面</strong></size></p>
+<p class="admonition-title"><font size=3><strong>写在前面</strong></size></p>
 <ul>
 <li>基本的fourier级数相关的东西要晓得，如果不知道，也要清楚它大概是干嘛的；</li>
 <li>一笔画闭合曲线的描点图是用Adobe Illustrater的钢笔工具完成的，其他软件理论上也可以，只要能够描点并将路径保存为svg文件即可；</li>
@@ -576,8 +576,8 @@
 </ul>
 </div>
 <p><br><br></p>
-<h2 id="_1"><font color=DodgerBlue font size=6><strong>理论</strong></font></h2>
-<p><font size=4>fourier画图就是对一个满足Direclet条件的函数，都可以用一堆 <span class="arithmatex">\(\sin\)</span> 跟 <span class="arithmatex">\(\cos\)</span> 来近似它。什么，你不知道什么是Direclet条件？笨蛋，Direclet条件就是Direclet这个人提出的一个充分不必要条件啊！看下面：</p>
+<h3 id="_1"><font color=DodgerBlue font size=5><strong>理论</strong></font></h3>
+<p>fourier画图就是对一个满足Direclet条件的函数，都可以用一堆 <span class="arithmatex">\(\sin\)</span> 跟 <span class="arithmatex">\(\cos\)</span> 来近似它。什么，你不知道什么是Direclet条件？笨蛋，Direclet条件就是Direclet这个人提出的一个充分不必要条件啊！看下面：</p>
 <blockquote>
 <ul>
 <li>第一，绝对不意气用事</li>
@@ -595,20 +595,24 @@
 </blockquote>
 <p>就拿方波函数
 <span class="arithmatex">\(f(t) = \left\{ {\begin{array}{*{20}{c}}
-1&amp;{|t| &lt; 0.5}\\
--1&amp;{0.5&lt;|t|&lt;1}
+1&amp;{|t| &lt; 0.5\pi}\\
+-1&amp;{0.5\pi&lt;|t|&lt;\pi}
 \end{array}} \right.\)</span>
 来说，教材上明确表示其Fourier级数为<span class="arithmatex">\(\frac{4}{\pi}  \sum\limits_{n = 1}^\infty  \frac{(-1)^{n-1} \cos (2n-1)t}{2n-1}\)</span> ，至于怎么算的，教材上说的就去看教材好了，我们这里只说用编程来画图！！！
-所以理论上任何周期函数都可以遵循这套流程，知道了它分解后的sin与cos的成分，接下来百编程画图就是水到渠成了！（也没那么水到渠成）
-我们这里要弄的是一个平面一笔画，就是说平面上的点都可以写成<span class="arithmatex">\(z(t)=x(t)+iy(t)\)</span>的形式。仔细一看，并没有比之前的情况走得多远：由于是个一笔画，所以<span class="arithmatex">\(z(t)\)</span>具有周期性，所以<span class="arithmatex">\(x(t)\)</span>与<span class="arithmatex">\(x(t)\)</span>具有周期性，只需要分别对它们求对应的Fourier级数，分别画图，然后将结果综合起来即可。</p>
+所以理论上任何周期函数都可以遵循这套流程，知道了它分解后的<span class="arithmatex">\(\sin\)</span>与<span class="arithmatex">\(\cos\)</span>的成分，接下来编程画图就是水到渠成了！（也没那么水到渠成）
+我们这里要弄的是一个平面一笔画，就是说平面上的点都可以写成<span class="arithmatex">\(z(t)=x(t)+iy(t)\)</span>的形式。</p>
+<p>仔细一看，并没有比之前的情况走得多远：由于是个一笔画，所以<span class="arithmatex">\(z(t)\)</span>具有周期性，所以<span class="arithmatex">\(x(t)\)</span>与<span class="arithmatex">\(x(t)\)</span>具有周期性，只需要分别对它们求对应的Fourier级数，分别画图，然后将结果综合起来即可。</p>
 <div class="admonition note">
-<p class="admonition-title"><font size=4><strong>注：</strong></size></p>
-<p>写成<span class="arithmatex">\(z(t)=x(t)+iy(t)\)</span>是为了便于类比，但这里我们是要在程序中画图，所以是应当是离散的时间，故<span class="arithmatex">\(z(n)=x(n)+iy(n)\)</span>，我们的Fourier级数也就成为了离散版本的<a href="../about/">DFT</a>。</p>
+<p class="admonition-title"><font size=3><strong>注：</strong></size></p>
+<p>写成<span class="arithmatex">\(z(t)=x(t)+iy(t)\)</span>是为了便于类比，但这里我们是要在程序中画图，所以是应当是离散的时间，故改成<span class="arithmatex">\(z(n)=x(n)+iy(n)\)</span>，我们的Fourier级数也就成为了离散版本的<a href="../about/">DFT</a>。</p>
 </div>
-<p><font size=4>理论已经拿下，下面开始实践！
+<p>理论已经拿下，下面开始实践！
 <br><br></p>
-<h2 id="_2"><font color=DodgerBlue  font size=6><strong>实践</strong></font></h2>
-<h4 id="step1-"><font size=5>STEP1--描点</font><font size=4></h4>
+<h3 id="_2"><font color=DodgerBlue  font size=5><strong>实践</strong></font></h3>
+<h4 id="step1-"><font size=4>STEP1--描点</font></h4>
+<blockquote>
+<p>建议跟俺的<a href="">B站视频</a>https://www.bilibili.com/video/BV19N411u71A搭配食用</p>
+</blockquote>
 <p>没有点怎么画图？所以先找到自己想要绘制的图片，用钢笔工具进行描点，得到一条闭合路径。像这样：<br><br>
 <img alt="处理前" height="27%" src="../images/Newton.jpg" width="27%" />  &nbsp;&nbsp;&nbsp;&nbsp;
 <img alt="处理后" height="30.7%" src="../images/AII.PNG" width="30.7%" />
@@ -620,7 +624,7 @@
 <li>本人<strong>十分尊重</strong>Newton先生，这里为了一笔画不断才显得有些滑稽，没有故意恶搞的意思。</li>
 </ul>
 </div>
-<h4 id="step2-"><font size=5>STEP2--得出点坐标</font><font size=4></h4>
+<h4 id="step2-"><font size=4>STEP2--得出点坐标</font></h4>
 <p>将这些点所围的路径选中，鼠标右击-导出所选项目-选择svg格式，然后用pycharm打开此svg文件，<del>不出意外的话</del>应该是这种风格的：<br>
 <div class="highlight"><span class="filename">NewtonSVG.svg</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">&lt;</span><span class="n">svg</span> <span class="n">xmlns</span><span class="o">=</span><span class="s2">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="n">viewBox</span><span class="o">=</span><span class="s2">&quot;0 0 1620 1887.65&quot;</span><span class="o">&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="o">&lt;</span><span class="n">defs</span><span class="o">&gt;&lt;</span><span class="n">style</span><span class="o">&gt;.</span><span class="n">cls</span><span class="o">-</span><span class="mi">1</span><span class="p">{</span><span class="n">fill</span><span class="p">:</span><span class="c1">#fff;}&lt;/style&gt;&lt;/defs&gt;</span>
@@ -684,8 +688,8 @@
 </span></code></pre></div>
 如果想知道Shiffman编程的经过，可以点开相应的视频观看。<del>不过我们这里只是借他的代码一用</del>，所以只消打开标亮的那个网址就好[doge]</p>
 </div>
-<h4 id="step3-"><font size=5>STEP3--调整点在画布中的位置分布</font><font size=4></h4>
-<p>在使用Shiffman的代码画图之前，我们要先看看自己找的坐标点位置分布，是不是在画布可显示的范围之内，如果不能，就需要进行调整，所以我们新建一个独立的<code>test.js</code>文件，里面有
+<h4 id="step3-"><font size=4>STEP3--调整点在画布中的位置分布</font></h4>
+<p>在使用Shiffman的代码画图之前，我们要先看看自己找的坐标点位置分布，是不是在画布可显示的范围之内。如果不能，就需要进行调整，所以我们新建一个独立的<code>test.js</code>文件，里面有
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">test.js</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
@@ -767,7 +771,7 @@
 这种情况下就是<code>scaleCoordinates</code>函数发挥作用的时候了，它可以将全体像素点同时进行平移、缩放，相应的数值对应于传入的4个参数中的后三个。<br>经过短暂的（<del>这真的很短暂</del>）调参后，我将上面程序高亮的那一行参数设为<code>scaleCoordinates(drawing_pre, -1200, -1350, 0.3)</code>后，伟大的Issac Newton头像就处在了画布中心区域。<br></p>
 <p><img alt="s" height="40%" src="../images/scalar.png" width="40%" />
 <br></p>
-<h4 id="step4-"><font size=5>STEP4--画图</font><font size=4></h4>
+<h4 id="step4-"><font size=4>STEP4--画图</font></h4>
 <p>Shifman的代码发挥作用的时候到了，将之前<code>test.js</code>的第25行之后的代码都注释掉，并全选后复制，然后用它覆盖掉Shiffman代码文件<code>ct.js</code>里面的所有内容，然后到<code>sketch.js</code>下先将变量<code>const skip</code>的值由8改成1，再运行。如果没显示，回到<code>ct.js</code>中修改参数即可。
 <br><br></p>
 <blockquote>
@@ -786,7 +790,7 @@
 <img alt="处理后" height="43.9%" src="../images/mrHuygens.gif" width="43.9%" /></p>
 <p><br><br><br><br></p>
 <blockquote>
-<p>----<font size=5 ><strong>送给惠更斯先生<img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f604.svg" title=":smile:" /></strong></font></p>
+<p>----<font size=4 ><strong>送给惠更斯先生<img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f604.svg" title=":smile:" /></strong></font></p>
 </blockquote>
 
 

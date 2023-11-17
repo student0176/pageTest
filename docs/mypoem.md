@@ -1,4 +1,4 @@
-<font size=5>几首拙诗《</font>
+<font size=5>几首拙诗</font>
 
 * **其一**
 
@@ -63,3 +63,5 @@
 <center>岂知人活百年亦有死，不如修道积德图心安？</center>
 
 <center>岂知屈子身虽死，浩气仍存天地间？</center>
+
+<br><br><br>
