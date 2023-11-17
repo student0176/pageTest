@@ -26,3 +26,18 @@
     </font>
 :smile: :smile::smile::smile:......
 <br><br><br><br>
+<script src="https://giscus.app/client.js"
+        data-repo="student0176/pageTest"
+        data-repo-id="R_kgDOKrLHAw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKrLHA84CbB-7"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
