@@ -7,9 +7,9 @@
     喜欢**四书五经、数学物理、计算机、台球和龙舟**(<del>*没错就是不喜欢自己的专业*</del>)
  :smile: :smile: :smile:
 !!! warning "<font size=3>**Method**</size>" 
-    <font size=4> 📫  &nbsp;  &nbsp;&nbsp;mail : shisu0176@gmail.com<br>
-        ![](images/bilibili.jpeg){: width="2%" height="2%"}&nbsp;&nbsp;   bilibili : <https://space.bilibili.com/408767554><br>
-         :fontawesome-brands-github:{.github} &nbsp;   github : <https://github.com/student0176><br>
+    <font size=4>  :fontawesome-solid-envelope:{.envelope}  &nbsp; `mail`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : shisu0176@gmail.com<br>
+         :fontawesome-brands-bilibili:{.bilibili} &nbsp;   `bilibili`: <https://space.bilibili.com/408767554><br>
+         :fontawesome-brands-github:{.github} &nbsp;   `github  `&nbsp;&nbsp;&nbsp;&nbsp;: <https://github.com/student0176><br>
         </font>
 :smile: :smile::smile::smile:
 

@@ -43,7 +43,7 @@ $f(t) = \left\{ {\begin{array}{*{20}{c}}
 
 ### <font color=DodgerBlue  font size=5>**实践**</font> 
 
-> 建议跟俺的[B站视频]()https://www.bilibili.com/video/BV19N411u71A搭配食用
+> 建议跟俺的[B站视频](https://www.bilibili.com/video/BV19N411u71A)搭配食用
 
 #### <font size=4>STEP1--描点</font>
 
@@ -56,7 +56,7 @@ $f(t) = \left\{ {\begin{array}{*{20}{c}}
     * 本人**十分尊重**Newton先生，这里为了一笔画不断才显得有些滑稽，没有故意恶搞的意思。
 
 #### <font size=4>STEP2--得出点坐标</font>
-将这些点所围的路径选中，鼠标右击-导出所选项目-选择svg格式，然后用pycharm打开此svg文件，<del>不出意外的话</del>应该是这种风格的：<br>
+将这些点所围的路径选中，鼠标右击 --> 导出所选项目 --> 选择svg格式，然后用pycharm打开此svg文件，<del>不出意外的话</del>应该是这种风格的：<br>
 ```py title="NewtonSVG.svg"  hl_lines='6'
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1620 1887.65">
     <defs><style>.cls-1{fill:#fff;}</style></defs>
