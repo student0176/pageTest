@@ -1,8 +1,14 @@
 site_name: 采风之旅
-site_url: https://github.com/student0176/pageTest/
+site_url: https://github.com/student0176/pageTest
+#repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: squidfunk/mkdocs-material
+
+
+
 theme:
   name: 'material'
   icon:
+    repo: fontawesome/solid/trash #github图标
     logo: fontawesome/solid/user-nurse #昵称旁边的logo
   features:
 #    - navigation.tabs #上方导航栏
